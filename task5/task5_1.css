@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    width: 100%;
+    height: 5.3rem;
+    line-height: 5.3rem;
+    background: #5fc0cd
+}
+
+.header p {
+    width: 100%;
+    text-align:center;
+    height: 5.3rem;
+    line-height: 5.3rem;
+    font-size: 2.25rem;
+    color: white;
+}
+.header img{
+    float: left;display: inline-block;}
