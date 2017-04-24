@@ -1,0 +1,32 @@
+*{margin: 0;padding: 0;}
+.header {
+    width: 100%;
+    background: #68cdd5;
+}
+
+.header-center {
+    width: 33%;
+    margin: 0 auto;
+    border-radius: 10px;
+    background: #55a8b3;
+}
+
+.header-center-1 {
+    display: inline-block;
+    vertical-align: middle;
+    color: white;
+    width: 49%;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.header-center-2 {
+    display: inline-block;
+    vertical-align: middle;
+    background: white;
+    color: #68cdd5;
+    border-radius: 10px;
+    width: 49%;
+    padding: 1rem 0;
+    text-align: center;
+}
