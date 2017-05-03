@@ -19,11 +19,20 @@
         <div class="body-top">
             <div class="body-top-txt">
                 <p>发言讨论结束，大家请投票</p>
-                <audio src="财富自由.mp3"></audio>
-                <button>
+                <audio src="久石让%20-%20月光の雲海.mp3" controls="controls" preload="" id="music" hidden=""></audio>
+                <button id="a" onclick="a()">
                     <img src="task7_music.png">
                 </button>
-
+                <script>
+                    function a() {
+                        var audio = document.getElementById('music');
+                        if (audio.paused) {
+                            audio.play();
+                        } else {
+                            audio.pause();
+                        }
+                    }
+                </script>
             </div>
             <div class="body-top-triangle">
                 <div></div>
