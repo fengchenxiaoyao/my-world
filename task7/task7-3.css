@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrap {
+    min-width: 320px;
+     max-width: 450px;
+    background-color: #29bde0;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/*header开始*/
+.header {
+    height: 3rem;
+    width: 100%;
+    max-width: 450px;min-width: 320px;position: fixed;
+    top: 0;z-index: 1;
+    background-color: #29bde0;
+
+}
+
+.header-left {
+    position: absolute;
+    left: 1rem;
+    top: .5rem;
+}
+
+.header-left img {
+    width: 2rem;
+}
+
+.header-center {
+    line-height: 3rem;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.header-right {
+    position: absolute;
+    right: 1rem;
+    top: .5rem;
+}
+
+.header-right img {
+    width: 2rem;
+}
+
+/*body开始*/
+.body{margin: 3rem 0 6rem}
+.body-top {
+    width: 80%;
+    margin: 2rem auto;
+}
+
+.body-top-img {
+    text-align: center;
+}
+
+.body-top-img img {
+    width: 15rem;
+}
+
+.body-top-center {
+    font-size: 1.1rem;
+    color: #d7c58a;
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+
+.body-top-txt {
+    color: white;
+    font-size: .9rem;
+}
+
+.body-top-txt span {
+    margin: .5rem 2rem 0 0
+}
+
+/*body-bottom开始*/
+.body-bottom {
+    background-color: white;
+    border-bottom: 1px solid gainsboro;
+}
+
+.body-bottom-day {
+    width: 80%;
+    margin: 0 auto 1rem;
+}
+
+.body-bottom-day-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.body-bottom-day p {
+    font-size: .9rem;
+    color: darkgrey;
+}
+
+/*footer开始*/
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color:#5fc0cd ;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 450px;min-width: 320px;z-index: 1;opacity: .8;
+}
+button{
+    border: none;}
+.footer-left {
+    font-size: 1.3rem;
+    margin: 1rem 0 1rem 1rem;
+    background-color: #f66f6f;
+    color: white;
+    width: 40%;
+    height: 2.5rem;line-height: 2.5rem;
+    border-radius: 6px;
+}
+.footer-left a{
+    color: white;text-decoration: none}
+.footer-right {
+    font-size: 1.3rem;
+    margin: 1rem 1rem 1rem 0;
+    background-color: #fbb435;
+    color: white;
+    width: 40%;
+    height: 2.5rem;line-height: 2.5rem;
+    border-radius: 6px;
+}
