@@ -4,7 +4,7 @@
 }
 
 .wrap {
-    max-width: 450px;
+    max-width: 640px;
     min-width: 320px;
     background-color: #29bde0;
     margin: auto;
@@ -13,7 +13,7 @@
 
 /*header开始*/
 .header {
-    max-width: 450px;
+    max-width: 640px;
     min-width: 320px;
     position: fixed;
     top: 0;
@@ -82,10 +82,17 @@
     margin-top: -1rem;
     right: 1rem;
     border: none;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    background-color: #fbb435;
 }
 
 .body-top-txt img {
-    width: 2rem;
+    width: 1rem;
+    margin-left: .3rem;
+    margin-bottom: -0.2rem
+
 }
 
 .body-top-triangle div {
@@ -117,16 +124,22 @@
     display: flex;
     justify-content: space-between;
     margin: .7rem 0;
-    opacity: 0;
+
 }
 
-.body-main-wrap-1-1:hover {
+/*当.body-main-wrap-1鼠标悬停的时候，.body-main-wrap-1-1的透明度为1*/
+.body-main-wrap-1:hover .body-main-wrap-1-1 {
     opacity: 1;
+}
+
+.body-main-wrap-1-1 {
+    opacity: 0;
 }
 
 .body-main-wrap-1-1 img {
     width: 1.1rem;
     height: 1.1rem;
+
 }
 
 .col-xs-4 {
@@ -139,7 +152,7 @@
     background-color: #f5c97b;
     line-height: 4rem;
     text-align: center;
-    color: darkgrey;
+    color: #565656;
 }
 
 .body-main-2 {
@@ -153,7 +166,7 @@
 
 /*footer开始*/
 .footer {
-    max-width: 450px;
+    max-width: 640px;
     min-width: 320px;
     width: 100%;
     height: 6rem;
@@ -177,4 +190,8 @@
     color: white;
     border: none;
 }
-.footer-txt a{text-decoration: none;color: white;}
+
+.footer-txt a {
+    text-decoration: none;
+    color: white;
+}
