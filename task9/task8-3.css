@@ -1,0 +1,338 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+div.container div.row div {
+
+    text-align: center;
+}
+body{min-width: 320px;}
+.header-leader {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-leader-telephone {
+    margin-left: 6rem;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    color: #42b683;
+}
+
+.header-leader-img {
+    margin-right: 10%;
+    line-height: 3rem;
+}
+
+.header-leader-img img {
+    width: 2rem;
+    margin-left: 1rem
+}
+
+/*task9需要*/
+.header-nav {
+    background-color: #29b078;
+    /*display: flex;*/
+    align-items: center; /*垂直居中*/
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+
+}
+
+/*task9备用*/
+.header-nav-img button {
+    position: absolute;
+    top: 1rem;
+    right: 2rem
+}
+@media screen and (max-width: 768px){
+    .header-nav-center{width: 100%;margin: auto}
+}
+@media screen and (max-width: 768px){
+    .header-leader-margin{float:none!important;
+        text-align: center}
+}
+.header-nav-center{margin: auto!important;}
+.header-nav-img img {
+    /*position: absolute;*/
+    /*top: -.5rem;*/
+    /*left: 2rem;*/
+    /*width: 10rem;*/
+    height: 6rem;
+    display: inline-block;
+}
+.bottom-border a {
+    color: white;
+    border-bottom: 3px solid white;
+    border-radius: 0 !important;
+}
+
+.header-nav a {
+    padding: 2rem 1.5rem !important;
+    border-radius: 0 !important;
+}
+
+.header-leader-margin {
+    margin: 0;
+}
+.header-leader-margin a{color: white!important;}
+.header-nav-img img {
+    padding-left: 6%;
+    margin-left: 4rem!important;
+}
+
+.header-nav ul {float: right;
+}
+
+.header-nav a:hover {
+    color: white;
+    border-bottom: 3px solid white;
+    background-color: #29b078 !important;
+}
+
+/*task8专用*/
+
+.header-nav a {
+    font-size: 1.8rem;
+    color: white;
+}
+
+
+.header-background img {
+    width: 100%;
+}
+
+/*main开始*/
+.main {
+    background-color: #fafafa;padding-bottom: 6rem;
+}
+
+.main-content-web .direction a {
+    text-decoration: none;
+    color: black;
+}
+
+.main-wrap {
+    width: 88%;
+    margin: auto;
+}
+
+.main-header-profession {
+    border-bottom: 1px solid #d0d6d9;
+    height: 5rem;
+}
+
+.main-header-profession p {
+    font-size: 1.5rem;
+    line-height: 5rem;
+}
+
+.main-header-profession span {
+    color: #29b078;
+}
+
+.main-header-direction {
+    padding: 1rem 0;
+    border-bottom: 1px solid #edf1f2
+}
+
+.main-header-direction-1 {
+    color: #afafaf
+}
+
+.main-header-direction a {
+    color: black;
+    margin: .5rem;
+    padding: .5rem;
+    text-decoration: none;
+}
+
+.main-header-direction a:hover {
+    color: white;
+    background-color: #29b078;
+
+    transition:background-color 0.8s linear
+}
+
+
+.main-content-web .direction {
+    border-bottom: 1px solid #d0d6d9;
+    padding: 1.5rem 0;
+    font-weight: bold;
+}
+
+.main-content-web-img img {
+    padding:0 .5rem;
+    text-align: center;
+    width: 100%;
+}
+
+.main-content-web-img {
+    width: 36%;
+    border-right: none;
+}
+
+.main-content-web-1 {
+    border-left: none;
+}
+
+.main-content-web-1 h4 {
+    font-weight: bold;
+}
+
+.main-content-web-3 {
+    width: 50%;
+}
+
+.main-content-web-2 span {
+    color: grey;
+    padding: 0 .5rem;
+}
+
+.main-content-web-2 img {
+    margin-right: .5rem;
+}
+
+tbody tr td {
+    border: 1px solid gainsboro;
+    height: 3rem;
+    background-color: white;
+}
+
+.main-content-web-4 .gery {
+    color: grey;
+    margin: 0 .5rem;
+}
+
+.main-content-web-4 .red {
+    color: red;
+    margin-right: .5rem;
+}
+
+.main-content-web-5 {
+    color: grey;
+    text-align: center;
+}
+
+.main-content-web-6 .left {
+    float: left;
+    margin-left: .5rem;
+}
+
+.main-content-web-6 .right {
+    float: right;
+    margin-right: 1rem;
+}
+
+.main-content-web-7 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: .5rem
+}
+
+.main-content-web-7 span {
+    color: red;
+    margin: 0 .5rem;
+}
+
+.main-content-web-8 span {
+    color: grey;
+    margin-left: .5rem;
+}
+
+.main-content-web-wrap {
+    position: relative;
+    margin: 3rem auto;
+    max-width: 380px;
+}
+
+.main-content-web-wrap-1 {
+    position: absolute;
+    top: 0;
+    padding: 29% 20%;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: black;
+    opacity: 0;
+}
+
+.main-content-web-wrap-1:hover {
+    opacity: .7;
+    transition: 3s ease;/*实现渐变效果*/
+
+}
+
+.main-content-web-wrap-1 .txt-leader {
+
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.2rem;
+}
+
+.main-content-web-wrap-1 p {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    text-indent: 2rem
+}
+
+/*footer开始*/
+
+/*footer-bottom*/
+.footer {
+    width: 100%;
+    background-color: #26a26f;
+}
+
+.footer-bottom-wrap {
+    margin: 2rem 0;
+
+}
+
+.footer-bottom-left-1 {
+    padding: 0 .5rem;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+}
+
+.footer-bottom-left {
+    width: 100%;
+    margin: auto
+}
+.footer-bottom-left{padding-left: 5rem;}
+.footer-bottom-center {padding-left: 5rem;}
+.footer-bottom-right{padding-left: 5rem;}
+.footer-bottom-left p {
+    text-align: left;
+    color: white;
+}
+.footer-bottom-left-bottom{padding-top: 2.5rem;}
+.footer-bottom-center span {
+    margin-right: 2rem
+}
+
+.footer-bottom-center p {
+    text-align: left;
+    color: white;
+}
+
+.footer-bottom-right {
+    color: white;
+   text-align: left !important;
+}
+
+.footer-bottom-right p {
+    padding-right: .3rem
+}
+
+.footer-bottom-bottom {
+    color: white;
+    text-align: center;
+    /*margin-top: 3rem;*/
+    border-top: 1px solid #32c086;
+    padding: 0.3rem 0;
+}
