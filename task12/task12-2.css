@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+/*header��ʼ*/
+.header {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+}
+.header .wrap-1 {
+  position: relative;
+  background: #68cdd5;
+}
+.header .wrap-1 .header-center {
+  text-align: center;
+  padding: .5rem 0;
+}
+.header .wrap-1 .header-center .center-left {
+  margin-right: -0.5rem;
+  padding: .5rem;
+  font-size: 2rem;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background: #5fc0cd;
+  cursor: pointer;
+}
+.header .wrap-1 .header-center .center-right {
+  color: #68cdd5;
+  font-size: 2rem;
+  border: none;
+  padding: .5rem;
+  background-color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.header .wrap-1 .header-left {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+}
+.header .wrap-1 .header-left img {
+  width: 2.5rem;
+}
+.header .nav {
+  display: flex;
+  border-bottom: 1px solid gainsboro;
+  background-color: white;
+}
+.header .nav .nav-right {
+  width: 33%;
+  position: relative;
+}
+.header .nav .nav-left {
+  width: 33%;
+  position: relative;
+}
+.header .nav .nav-center {
+  width: 34%;
+  position: relative;
+}
+.header .nav .nav-center p {
+  border-left: 1px solid gainsboro;
+  border-right: 1px solid #dcdcdc;
+}
+.header .nav p {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+  color: gray;
+}
+.header .nav p span {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2rem;
+  vertical-align: middle;
+  border-top: 4px dashed;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+}
+.nav select {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  font-size: 1.5rem;
+  height: 3.8rem;
+  cursor: pointer;
+}
+/*header����*/
+.main-wrap {
+  margin-top: 7.9rem;
+  margin-bottom: 4.8rem;
+}
+.main-wrap .main {
+  font-size: 1.6rem;
+  color: gray;
+  border-bottom: 1px solid gainsboro;
+  padding: 1rem;
+}
+.main-wrap .main .main-server {
+  display: flex;
+}
+.main-wrap .main .main-server img {
+  height: 1.8rem;
+  margin-right: .5rem;
+}
+.main-wrap .main .main-date {
+  margin: .5rem 0 .5rem 2rem;
+  color: #000;
+}
+.main-wrap .main .main-date .price {
+  color: #e63b0e;
+  font-size: 1.6rem;
+  float: right;
+}
+.main-wrap .main .main-date .color {
+  color: #5fc0cd;
+  margin-left: .5rem;
+  font-family: sans-serif;
+}
+.main-wrap .main .main-date .color img {
+  width: .6rem;
+}
+.main-wrap .main .main-add img {
+  width: 1.2rem;
+  margin-right: .6rem;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.footer .navbar {
+  background: ghostwhite;
+  height: 4rem;
+  position: relative;
+}
+.footer .navbar .footer-left {
+  position: absolute;
+  left: 20%;
+  top: .3rem;
+  color: #5fc0cd;
+}
+.footer .navbar .footer-left img {
+  width: 2.2rem;
+}
+.footer .navbar .footer-middle {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -2rem;
+}
+.footer .navbar .footer-middle img {
+  width: 4rem;
+}
+.footer .navbar .footer-right {
+  position: absolute;
+  right: 20%;
+  top: .3rem;
+}
+.footer .navbar .footer-right img {
+  width: 2.2rem;
+}
