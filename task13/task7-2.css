@@ -1,0 +1,165 @@
+/** {*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+/*}*/
+
+.wrap {
+    max-width: 640px;
+    min-width: 320px;
+    background-color: #29bde0;
+    margin: auto;
+
+}
+
+/*header开始*/
+
+.header-wrap {
+    position: relative;
+    height: 3rem;
+    color: white;
+}
+
+
+
+/*body部分开始*/
+.body {
+    margin: 3rem 0 6rem;
+}
+
+.body-top-txt {
+    height: 3rem;
+    background-color: #b9e9f5;
+    position: relative;
+}
+
+.body-top-txt p {
+    font-size: 1rem;
+    color: #6a7b7f;
+    line-height: 3rem;
+    margin-left: 2rem;
+}
+
+.body-top-txt audio {
+    display: none;
+}
+
+.body-top-txt button {
+    position: absolute;
+    top: 50%;
+    margin-top: -1rem;
+    right: 1rem;
+    border: none;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    background-color: #fbb435;
+    cursor:pointer;
+}
+
+.body-top-txt img {
+    width: 1rem;
+    margin-left: .3rem;
+    margin-bottom: -0.2rem
+
+}
+
+.body-top-triangle div {
+    width: 0;
+    height: 0;
+    border-top: .5rem solid #b9e9f5;
+    border-left: .25rem solid transparent;
+    border-right: .25rem solid transparent;
+    margin-left: 3rem;
+}
+
+.body-top-triangle p {
+    margin-left: 2.8rem;
+    color: white;
+    font-size: .9rem
+}
+
+/*body-main开始*/
+.body-main {
+    margin: 1.5rem 0;
+}
+
+.body-main-wrap {
+    display: flex;
+    justify-content: space-around;
+}
+.body-main-wrap-1{
+    cursor: pointer;}
+.body-main-wrap-1-1 {
+    display: flex;
+    justify-content: space-between;
+    margin: .7rem 0;
+
+}
+
+/*当.body-main-wrap-1鼠标悬停的时候，.body-main-wrap-1-1的透明度为1*/
+.body-main-wrap-1:hover .body-main-wrap-1-1 {
+    opacity: 1;
+}
+
+.body-main-wrap-1-1 {
+    opacity: 0;
+}
+
+.body-main-wrap-1-1 img {
+    width: 1.1rem;
+    height: 1.1rem;
+
+}
+
+.col-xs-4 {
+    border: 3px solid white;
+}
+
+.body-main-1 {
+    width: 5rem;
+    height: 4rem;
+    background-color: #f5c97b;
+    line-height: 4rem;
+    text-align: center;
+    color: #565656;
+}
+
+.body-main-2 {
+    width: 5rem;
+    height: 2rem;
+    background-color: #83b09a;
+    line-height: 2rem;
+    text-align: center;
+    color: white;
+}
+
+/*footer开始*/
+.footer {
+
+    height: 6rem;
+    line-height: 6rem;
+    border-top: 1px solid white;
+    /**/
+    background-color: #29bde0;
+    text-align: center;
+
+}
+
+.footer-txt {
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    background-color: #fbb435;
+    width: 80%;
+    margin: 1rem auto;
+    font-size: 1.5rem;
+    color: white;
+    border: none;
+    cursor:pointer;/*鼠标手型*/
+}
+
+.footer-txt a {
+    text-decoration: none;
+    color: white;
+
+}
