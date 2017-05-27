@@ -1,0 +1,201 @@
+/*main开始*/
+.main {
+    background-color: #fafafa;
+    padding-bottom: 6rem;
+}
+
+.main-content-web .direction a {
+    text-decoration: none;
+    color: black;
+}
+
+.main-wrap {
+    width: 88%;
+    margin: auto;
+}
+
+.main-header-profession {
+    border-bottom: 1px solid #d0d6d9;
+    height: 5rem;
+}
+
+.main-header-profession p {
+    font-size: 1.5rem;
+    line-height: 5rem;
+}
+
+.main-header-profession span {
+    color: #29b078;font-size: 1.5rem;
+}
+
+.main-header-direction {
+    padding: 1rem 0;
+    border-bottom: 1px solid #edf1f2
+}
+.main-header-direction span{display: inline-block;}
+.main-header-direction-color {
+    color: #afafaf;font-size: 1.5rem;
+}
+
+.main-header-direction a {
+    color: black;
+    margin: .5rem;
+    padding: .5rem;
+    font-size: 1.3rem;
+    line-height: 3rem;
+    text-decoration: none;
+}
+
+.main-header-direction a:hover {
+    color: white;
+    background-color: #29b078;
+
+    transition: background-color 0.8s linear
+}
+
+.main-content-web .direction {
+    border-bottom: 1px solid #d0d6d9;
+    padding: 1.5rem 0;
+    font-weight: bold;
+}
+
+.main-content-web-img img {
+    padding: 0 .5rem;
+    text-align: center;
+    width: 90%;
+}
+
+.main-content-web-img {
+    width: 36%;
+    border-right: none;
+}
+
+.main-content-web-name {
+    border-left: none;
+}
+
+.main-content-web-name h4 {
+    font-weight: bold;
+}
+
+.main-content-web-three {
+    width: 50%;
+}
+
+.main-content-web-row2 span {
+    color: grey;
+    padding: 0 .5rem;
+}
+
+.main-content-web-row2 img {
+    margin-right: .5rem;
+}
+
+tbody tr td {
+    border: 1px solid gainsboro;
+    height: 3rem;
+    background-color: white;
+}
+
+.main-content-web-row3 .gery {
+    color: grey;
+    margin: 0 .5rem;
+}
+
+.main-content-web-row3 .red {
+    color: red;
+    margin-right: .5rem;
+}
+
+.main-content-web-money{
+    color: grey;
+    text-align: center;
+}
+
+.main-content-web-row4 .left {
+    float: left;
+    margin-left: .5rem;
+}
+
+.main-content-web-row4 .right {
+    float: right;
+    margin-right: 1rem;
+}
+
+.main-content-web-people {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: .5rem
+}
+
+.main-content-web-people span {
+    color: red;
+    margin: 0 .5rem;
+}
+
+.main-content-web-last span {
+    color: grey;
+    margin-left: .5rem;
+}
+
+.main-content-web-wrap {
+    position: relative;
+    margin: 3rem auto;
+}
+.main-content-web-wrap table{border-spacing: 0;}
+.main-content-web-wrap-ios {
+    position: absolute;
+    top: 0;
+    /*padding: 29% 20%;*/
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: black;
+    opacity: 0;
+}
+
+.main-content-web-wrap-ios .ios {
+    margin:4rem;
+}
+
+.main-content-web-wrap-ios:hover {
+    opacity: .7;
+    transition: 3s ease; /*实现渐变效果*/
+
+}
+
+.main-content-web-wrap-ios .txt-leader {
+
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.2rem;
+}
+
+.main-content-web-wrap-ios p {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    text-indent: 2rem
+}
+
+@media screen and (min-width: 1201px) {
+    .main-content-web-wrap {
+        width: 30%;margin: 2% 1.5%;
+        display: inline-block;
+    }
+
+}
+
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+    .main-content-web-wrap {
+        width: 45%; display: inline-block;margin: 2% 2.4%;
+    }
+
+}
+
+@media screen and (max-width: 991px) {
+    .main-content-web-wrap {
+        width: 100%;max-width: 380px;
+    }
+
+}

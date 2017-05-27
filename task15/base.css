@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+}
+
+body {
+    min-width: 300px;
+}
+
+.header-leader {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-leader-telephone {
+    margin-left: 6%;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    color: #42b683;
+}
+
+.header-leader-img {
+    margin-right: 6%;
+    line-height: 3rem;
+}
+
+.header-leader-img img {
+    height: 2rem;
+    /*margin-left: .3rem;*/
+    padding-top: .5rem;
+}
+
+/*header-nav部分*/
+.header-nav {
+    width: 100%;
+    background-color: #29b078;
+    height: 6rem;
+}
+
+.header-nav-img {
+    float: left;
+    margin-left: 6%;
+    margin-bottom: .7rem;
+}
+
+.header-nav-img img {
+    height: 4rem;
+    margin-top: 1rem;
+}
+
+.header-nav-right {
+    float: right;
+}
+
+.header-nav-right ul {
+    display: flex;
+    list-style-type: none;
+    font-size: 5rem;
+    line-height: 5rem;
+    margin-right: 4rem;
+}
+
+.header-nav-right .border-bottom {
+    border-bottom: 4px solid white;
+}
+
+.header-nav-right ul li {
+    padding-bottom: .3rem;
+}
+
+.header-nav-right ul li:hover {
+    border-bottom: 4px solid white;
+}
+
+@media screen and (max-width: 768px) {
+    .header-nav-right ul {
+        display: none;
+    }
+}
+
+/*屏幕缩小时到786px是横向导航栏消失*/
+.header-nav-right ul li a {
+    margin-left: 1rem;
+    padding-right: 1rem;
+    color: white;
+    text-decoration: none;
+    letter-spacing: .3rem; /*改变字符间的间距*/
+}
+
+/*.nav-list li{display: none}*/
+.header-nav-right-btn span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    margin: .6rem 1rem;
+    background-color: #888;
+}
+
+.header-nav-right-btn {
+    border-radius: 3px;
+    border: none;
+    margin: 1.5rem;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.nav-list {
+    display: none;
+    list-style-type: none;
+    border-top: 1px solid gainsboro;
+    background-color: #29b078;
+    clear: both;
+}
+
+@media screen and (min-width: 768px ) {
+    .header-nav-right-btn, .nav-list {
+        display: none !important;
+    }
+}
+
+.nav-list ul {
+    position: relative;
+    left: 50%;
+    font-size: 5rem;
+    list-style-type: none;
+    width: 4rem;
+    margin-left: -1.5rem;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.nav-list ul li {
+    padding-bottom: 1rem;
+}
+
+.nav-list ul a {
+    text-decoration: none;
+    color: white;
+    padding-bottom: 1rem;
+
+}
+.nav-list .border-bottom a{border-bottom: 4px solid white;}
+.nav-list ul a:hover {
+    border-bottom: 4px solid white;
+}
+
+/*footer部分*/
+footer{overflow: hidden;}
+.footer-bottom {
+    width: 100%;
+    background-color: #26a26f;
+}
+
+.footer-bottom-wrap {
+    margin: 2rem 0;
+
+}
+
+.footer-bottom-left-1 {
+    padding: 0 .5rem;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+    font-size: 1.5rem;
+}
+
+.footer-bottom-left {
+    width: 100%;
+    margin: auto
+}
+
+.footer-bottom-left {
+    padding-left: 5rem;
+}
+
+.footer-bottom-center {
+    padding-left: 5rem;
+}
+.footer-bottom-center .margin{margin: .5rem 0;}
+.footer-bottom-right {
+    padding-left: 5rem;
+}
+
+.footer-bottom-left p {
+    text-align: left;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.footer-bottom-left-bottom {
+    padding-top: 2.5rem;
+}
+.footer-bottom-left-bottom span{font-size: 1.5rem;}
+.footer-bottom-center span {
+    margin-right: 2rem;font-size: 1.5rem;
+}
+
+.footer-bottom-center p {
+    text-align: left;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.footer-bottom-right {
+    color: white;
+    text-align: left !important;
+}
+
+.footer-bottom-right p {
+    padding-right: .3rem;
+    font-size: 1.5rem;
+}
+
+.footer-bottom-bottom {
+    color: white;
+    text-align: center;
+    /*margin-top: 3rem;*/
+    border-top: 1px solid #32c086;
+    padding: 0.3rem 0;
+    background-color: #26a26f;
+    font-size: 1.3rem;
+
+}
+@media screen and (min-width: 992px) {
+    .footer-bottom-wrap {
+        width: 33.33%;
+        float: left;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .footer-bottom-wrap {
+        width: 50%;
+        float: left;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer-bottom-wrap {
+        width: 100%;
+        float: left;
+    }
+}
+.clear {
+    clear: both;
+}

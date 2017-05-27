@@ -1,0 +1,415 @@
+/*轮播图*/
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 30vw;
+    min-width: 7rem;
+
+}
+
+.carousel img {
+    width: 100%;
+}
+
+.carousel .img1 {
+    -webkit-animation: pic1 10s infinite; /*轮播动画效果*/
+}
+
+.carousel .img2 {
+    -webkit-animation: pic2 10s infinite; /*轮播动画效果*/
+}
+
+.carousel .img3 {
+    -webkit-animation: pic3 10s infinite; /*轮播动画效果*/
+}
+
+/*轮播图动画控制*/
+@keyframes pic1 {
+    0% {
+        margin-left: 0;
+    }
+    15% {
+        margin-left: 0;
+    }
+    25% {
+        margin-left: -100%;
+    }
+    40% {
+        margin-left: -100%;
+    }
+    50% {
+        margin-left: -200%;
+    }
+    65% {
+        margin-left: -200%;
+    }
+    80% {
+        margin-left: 0;
+    }
+    100% {
+        margin-left: 0;
+    }
+}
+
+@keyframes pic2 {
+    0% {
+        margin-left: 100%;
+    }
+    15% {
+        margin-left: 100%;
+    }
+    25% {
+        margin-left: 0;
+    }
+    40% {
+        margin-left: 0;
+    }
+    50% {
+        margin-left: -100%;
+    }
+    65% {
+        margin-left: -100%;
+    }
+    80% {
+        margin-left: 100%;
+    }
+    100% {
+        margin-left: 100%;
+    }
+}
+
+@keyframes pic3 {
+    0% {
+        margin-left: 200%;
+    }
+    15% {
+        margin-left: 200%;
+    }
+    25% {
+        margin-left: 100%;
+    }
+    40% {
+        margin-left: 100%;
+    }
+    50% {
+        margin-left: 0;
+    }
+    65% {
+        margin-left: 0;
+    }
+    80% {
+        margin-left: 200%;
+    }
+    100% {
+        margin-left: 200%;
+    }
+}
+
+.img1, .img2, .img3 {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.control-left {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 3rem;
+}
+
+.control-left img {
+    width: 1.5rem;
+}
+
+.control-right img {
+    width: 1.5rem;
+}
+
+.control-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 3rem;
+}
+
+.circle {
+    position: absolute;
+    top: 26vw;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.circle span {
+    display: inline-block;
+    padding: .4rem;
+    border-radius: 50%;
+    border: 1px solid gainsboro;
+    margin: 0 .2rem;
+
+}
+
+.circle span:hover {
+    background-color: gainsboro;
+    cursor: pointer;
+}
+
+/*main开始*/
+main{background-color: ghostwhite;}
+@media screen and (min-width: 1101px) {
+    .main-top, .main-center-wrap, .main-bottom-student,.footer-bottom-wrap {
+        width: 25%;
+        float: left;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1101px) {
+    .main-top, .main-center-wrap, .main-bottom-student,.footer-bottom-wrap {
+        width: 50%;
+        float: left;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-top, .main-center-wrap, .main-bottom-student,.footer-bottom-wrap {
+        width: 100%;
+        float: left;
+    }
+}
+.main-wrap{
+    padding: 0 2rem;}
+
+.main-adv {
+    margin-bottom: 3rem;
+    padding-top: 5rem;
+
+}
+
+.main-top {
+    height: 12rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+/*.main-top img{height: 5rem;}*/
+.main-top .margin {margin: 1rem 0;font-size: 2.5rem}
+.main-top-txt {
+    color: #cacaca;
+    text-align: left;
+    width: 17rem;
+    margin: auto;
+}
+
+.main-adv .padding {
+    padding-top: .8rem;
+}
+
+.main-top-border {
+    padding-top: 2rem;
+    border-left: 1px dashed gainsboro;
+    height: 12rem;
+}
+
+.main-adv p {
+    font-size: 1.5rem;
+}
+
+.main-top-border img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.main-top-border span {
+    color: #29b078;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1.6rem;
+    margin-left: .5rem;
+}
+
+.main-top-border p {
+    color: #cacaca;
+    margin: .5rem 1rem;
+}
+
+.clear {
+    clear: both;
+}
+
+/*main-learn开始*/
+.main-learn {
+    text-align: center;
+}
+
+.main-learn-p {
+    text-align: center;
+    width: 100%;
+    font-size: 2.5rem;
+    margin: 6rem 0 3rem;
+}
+
+.main-center-round {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: 1px solid gainsboro;
+    background-color: white;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.main-center-round span {
+    line-height: 4rem;
+    text-align: center;
+    color: #26a26f;
+    font-size: 1.6rem;
+}
+
+.main-center-wrap img {
+    vertical-align: middle;
+}
+
+.main-center-txt {
+    display: inline-block;
+    vertical-align: middle;
+    width: 12rem;
+    text-align: left;
+    font-size: 1.4rem;
+    margin: 0 1rem;
+}
+
+.main-center-wrap {
+    margin-bottom: 2rem;
+    height: 7rem;
+}
+@media screen and (min-width: 320px) {.main-center-left img{opacity: 0;}
+
+}
+
+/*main-student开始*/
+.main-student {
+    margin: 6rem 0 3rem;
+    text-align: center;
+}
+
+.main-bottom-leader {
+    text-align: center;
+    font-weight: bold;
+    padding: 3rem 0;
+    font-size: 1.6rem;
+}
+
+.main-bottom-student-wrap {
+    background-color: white;
+    box-shadow: 0 0 5px #ebeaeb;
+    box-sizing: border-box;
+    margin: 1rem 2rem;
+}
+
+
+.main-bottom-img {
+    padding-top: 1rem
+}
+
+.main-bottom-student p {
+    color: #c6c6c6;
+    text-align: left;
+    width: 16rem;
+    margin: auto;
+    padding-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.main-bottom-txt {
+    font-weight: bold;
+    margin: 1.5rem 0;
+    font-size: 1.5rem;
+}
+.main-bottom-circle{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 2rem 0;
+}
+.main-bottom-circle span{ display: block;
+    width: 1rem;
+    height: 1rem;
+    float: left;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    margin: 0 .4rem;
+    cursor: pointer;}
+.main-bottom-circle span:hover {
+    background-color: #26a26f;
+}
+/*main-footer开始*/
+.main-footer {
+    padding-bottom: 5rem;
+}
+
+.main-footer-img {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+}
+
+@media screen and (max-width: 580px) {
+    .main-footer-img {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-footer-img div {
+        margin-top: 1.5rem;
+    }
+}
+.main-footer-img div{display: inline-block;}
+.main-footer-img img {
+    width: 100%;
+    height: 100%;
+}
+/*.main-footer-img .box-shadow{box-shadow: 2px 1px 5px 5px #999;}*/
+.main-footer-img img:hover {
+    /*box-shadow: 0 0 10px #ebeaeb;*/
+    box-shadow: 2px 1px 5px 5px #999;
+}
+/*footer-link开始*/
+.footer-link{background: white;}
+.footer-top-leader {
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.footer-top-content-wrap {
+    width: .4rem;
+    height: .4rem;
+    border-radius: 50%;
+    background-color: gray;
+    display: inline-block;
+    margin: 0 1.5rem .1rem 0;
+}
+
+.footer-top-content {
+    width: 100%;
+    margin: 1rem auto;
+    color: #b0b0b0;
+    text-align: center;
+}
+
+.footer-top-content li {
+    display: inline-block;
+    padding-right: 1rem;
+    margin: auto 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.footer-top-content a {
+    color: gray;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
