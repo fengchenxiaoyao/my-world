@@ -1,0 +1,144 @@
+@charset "UTF-8";
+.wrap {
+  background: #29bde0;
+}
+/* 页头部分 */
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  max-width: 768px;
+  /* 游戏提示 */
+}
+.header .head {
+  position: relative;
+  font-size: 2.5rem;
+  color: #fff;
+  background: #29bde0;
+}
+.header .head .icon {
+  padding: 2.65% 0;
+  width: 6.25%;
+}
+.header .head .lef-icon {
+  float: left;
+  margin-left: 4%;
+}
+.header .head .rig-icon {
+  float: right;
+  margin-right: 4%;
+}
+.header .head span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.header .tips {
+  position: relative;
+  font-size: 2rem;
+  background: #b9e9f5;
+}
+.header .tips p {
+  position: absolute;
+  top: 50%;
+  left: 6%;
+  transform: translateY(-50%);
+}
+.header .tips .play-btn {
+  float: right;
+  padding: 4.0625%;
+  margin: 3% 4% 3% 0;
+  background: url(../images/21.png) no-repeat;
+  background-size: 100% 100%;
+}
+.header .tips .play-btn audio {
+  display: none;
+}
+.header .tips .triangle {
+  position: absolute;
+  left: 10.78%;
+  bottom: -14px;
+  border-width: 8px;
+  border-style: solid;
+  border-color: #b9e9f5 transparent transparent;
+}
+/* 占位元素 */
+.onstitute {
+  text-align: center;
+  font-size: 3rem;
+}
+.onstitute p {
+  padding: 10% 0;
+}
+/* 页面主体部分 */
+.title {
+  margin: 0 0 3% 10%;
+  font-size: 1.8rem;
+  color: #fff;
+}
+.main {
+  padding-bottom: 5%;
+}
+.main .degree {
+  float: left;
+  width: 20%;
+  margin: 0 6.66% 8%;
+  box-sizing: border-box;
+  border: 3px solid #fff;
+  cursor: pointer;
+}
+.main .degree .name {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 70%;
+  background: #f5c97b;
+  font-size: 2rem;
+}
+.main .degree .ordinal {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 30%;
+  background: #83b09a;
+  opacity: 0.7;
+  font-size: 1.6rem;
+  color: #fff;
+}
+.main .degree span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  white-space: nowrap;
+}
+/* 占位元素 */
+.seat {
+  padding: 10% 0;
+}
+@media screen and (max-width: 550px) {
+  .seat {
+    padding: 46% 0;
+  }
+}
+/* 页尾部分 */
+.footer {
+  position: fixed;
+  bottom: 0;
+  z-index: 10;
+  width: 100%;
+  max-width: 768px;
+  text-align: center;
+  background: #29bde0;
+}
+.footer .btn {
+  width: 70%;
+  margin: 6.5% 0;
+  padding: 6px 0;
+  font-size: 3rem;
+  color: #fff;
+  background: #fbb435;
+  white-space: nowrap;
+}

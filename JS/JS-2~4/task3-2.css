@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-width: 300px;
+    max-width: 640px;
+    margin: auto;
+}
+
+/*header开始*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #29bde0;
+    height: 4.5rem;
+    border-bottom: 1px solid gainsboro;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    max-width: 640px;
+    min-width: 320px;
+}
+
+.header-left {
+    height: 2.5rem;
+    padding: .75rem;
+}
+
+.header-center {
+    line-height: 4.5rem;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.header-right {
+    height: 2rem;
+    padding: .75rem;
+}
+
+.header-right img {
+    height: 2rem;
+}
+header img{
+    width: 100%;}
+/*main开始*/
+main {
+    background-color: #29bde0;
+    margin-top: 4.5rem;
+    margin-bottom: 6rem;
+
+}
+
+.main-box {
+    padding: 2.5rem 0;
+    display: inline-block;
+    width: 33.333%;
+    text-align: -webkit-center;
+}
+@media screen and (max-width: 500px) and (min-width: 400px) {.main-box{
+    width: 50%;}
+}
+@media screen and (max-width: 399px)  {.main-box{
+    width: 100%;}
+}
+.main-box-top {
+    background-image: url("ptteng.png");
+    background-repeat: no-repeat;
+    width: 9rem;
+    background-size: 9rem 100%;
+    border: 5px solid white;
+    box-sizing: border-box;
+}
+
+.main-box-top p {
+    text-align: center;
+    padding: 2.5rem 1rem;
+    background-color: #f5c97b;
+    opacity: 0;
+    color: white;
+    font-size: 2rem;
+}
+
+.main-box-top p:hover {
+    opacity: 1;
+}
+
+.main-box-bottom {
+    text-align: center;
+    border-top: 1px solid gainsboro;
+    color: white;
+    font-size: 1.3rem;
+}
+
+footer {
+    background-color: #29bde0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 2;
+    max-width: 640px;
+    min-width: 320px;
+    border-top: 1px solid white;
+}
+
+button {
+    width: 70%;
+    margin: 2rem 15% 2rem;
+    padding: .5rem 2rem;
+    background-color: #fbb435;
+    border: none;
+    font-size: 1.6rem;
+    color: white;
+    cursor: pointer;
+}

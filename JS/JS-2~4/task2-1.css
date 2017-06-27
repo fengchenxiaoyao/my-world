@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{min-width: 300px;
+    max-width: 640px;
+    margin: auto;}
+/*header开始*/
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #29bde0;
+    height: 4.5rem;
+}
+
+.header-left {
+    height: 3rem;
+    margin: .75rem;
+}
+
+.header-center {
+    line-height: 4.5rem;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.header-right {
+    height: 3rem;
+    margin: .75rem;
+}
+
+/*main开始*/
+main {
+    background: #f0f0f0;
+}
+
+.main-wrap {
+    margin: auto;
+    width: 90%;
+}
+
+.main-top {
+    display: flex;
+    padding-top: 2rem;
+}
+
+.main-top-left {
+    width: 20%;
+    height: 25rem;
+    background-color: white;
+}
+
+.main-top-left p {
+    width: 20px;
+    margin: 0 auto;
+    font-size: 1.6rem;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.main-top-right {
+    width: 100%;
+    background-color: ghostwhite;
+}
+
+.main-top-right ul {
+    height: 20rem;
+    border-bottom: 1px solid gainsboro;
+    margin: 0;
+    /*padding: 2rem 5%;*/
+    width: 100%;
+    overflow: auto;
+    list-style-type: none;
+    background-color: #fbfbfb;
+}
+
+.main-top-right ul li {
+    display: inline-block;
+    width: 50%;
+    padding: 0 0 1rem 0;
+    font-size: 1.5rem;
+    color: #999;
+}
+@media screen and (max-width: 450px) {.main-top-right ul li{width: 100%;}
+
+}
+.main-top-right ul li span{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 1rem;
+    padding: .5rem;
+    background-color: #fab344;
+}
+.main-top-right ul li i{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 1rem;
+    padding: .5rem;
+    background-color: #29bde0;
+}
+.main-top-right button {
+    height: 5rem;
+    width: 100%;
+    border: none;
+    background-color: ghostwhite;
+    cursor: pointer;
+}
+
+.main-top-right button span {
+    font-size: 1.6rem;
+    color: #29bde0;
+}
+
+.main-top-right button img {
+    width: 1rem;
+    color: #29bde0;
+    margin-left: .5rem;
+}
+
+/*main-center开始*/
+.main-center {
+    margin-top: 1rem;
+    background-color: white;
+    padding-bottom: 1rem;
+}
+
+.main-center p {
+    padding: 2rem 0;
+    font-size: 2rem;
+    width: 95%;
+    margin: auto;
+    color: #d7d7d7;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+/*main-bottom开始*/
+.main-bottom {
+    background-color: white;
+    margin: 1rem 0;
+}
+
+.main-bottom p {
+    font-size: 1.8rem;
+    margin-left: 1rem;
+    padding: 1rem 0;
+}
+
+.main-bottom p input {
+    font-size: 1.8rem;
+    width: 3rem;
+    text-align: center;
+    color:orange;
+}
+
+.main-bottom-range {
+    margin-left: 1rem;
+    padding-bottom: 1rem;
+
+}
+
+.main-bottom-range button {
+    width: 1.8rem;
+    height: 1.8rem;
+    background-color: white;
+    border: 1px solid orange;
+}
+
+.main-bottom-range button img {
+    vertical-align: middle;
+    text-align: center;
+    /*width: 1rem;*/
+}
+
+.main-bottom-range .minus img {
+    margin-bottom: 2px;
+    height: 0.3rem;
+}
+
+.main-bottom-range .plus img {
+    margin: 1px 2px 1px 1px;
+}
+
+.main-bottom-range input {
+    vertical-align: middle;
+    width: 80%;
+}
+
+input[type=range] {
+    border: none;
+}
+.main-bottom-range input {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 73%;
+    height: 0.28rem;
+    vertical-align: middle;
+    background-color: #fcc671;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 62px;
+    height: 38px;
+    vertical-align: middle;
+    background-image: url("http://119.10.57.69:880/ptt147/JS/task2-4/img/setting-range.png");
+    cursor: pointer;
+}
+
+.main-bottom-range input {
+    width: 73%;
+    /*margin: 0 1.42rem;*/
+    text-align: center;
+    font-size: 28px;
+    color: #fab344;
+    background-color: #fab344;
+    border: none;
+    outline: none;
+}
+/*main-footer开始*/
+.main-footer {
+    width: 100%;
+    height: 4rem;
+    margin: 1rem 0;
+    font-size: 2rem;
+    background-color: orange;
+    color: white;
+    border: none;
+    cursor: pointer;
+}

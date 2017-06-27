@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BRPGresultspage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="./css/BRPG-CssReset.css" rel="stylesheet">
+    <link href="./css/BRPGresults-1.css" rel="stylesheet">
+</head>
+<body>
+<!-- 整个页面用wrap包裹设置背景色 -->
+<div class="wrap">
+    <!-- 页头部分 -->
+    <header class="header">
+        <div class="head clearfix">
+            <div class="icon lef-icon">
+                <img src="./images/26.png">
+            </div>
+            <span>游戏结果</span>
+            <div class="icon rig-icon"><img src="./images/27.png"></div>
+        </div>
+    </header>
+    <!-- 页面主体部分 -->
+    <div class="onstitute">
+        <p>占位元素</p>
+    </div>
+    <!-- 游戏结果显示部分 -->
+    <div class="container">
+        <div class="picture">
+            <img src="./images/result.png">
+            <span class="degree" id="degree">平民胜利</span>
+        </div>
+        <div class="words">
+            太棒了！希望你再接再励取得下一次的胜利。
+        </div>
+        <div class="results">
+            <p class="word-1">本次游戏共计用时0小时25分钟</p>
+            <p class="word-2">
+            <span class="accent" id="accent">杀手0人</span>
+            <span class="accent accent-1" id="accent-1">平民6人</span>
+            </p>
+            <p class="word-2">杀手词汇：爱新觉罗</p>
+            <p>平民词汇：努尔哈赤</p>
+        </div>
+    </div>
+    <!-- 游戏过程显示部分 -->
+    <div class="course" id="course"></div>
+    <div class="seat"></div>
+    <!-- 页尾部分 -->
+    <footer class="footer clearfix">
+        <a href="BRPGhome-1.html">
+            <button type="button" class="btn btn-lef" id="btn">再来一局</button>
+        </a>
+        <a href="#">
+            <button type="button" class="btn btn-rig">上传并分享</button>
+        </a>
+    </footer>
+</div>
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script src="./js/BRPG-result.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="task2-1.css">
+
+    <title>玩家配比</title>
+</head>
+<body>
+<header>
+    <div class="header-left"><a href="#"><img src="task2-1-setting-back.png"></a></div>
+    <div class="header-center">参数设置</div>
+    <div class="header-right"><a href="#"><img src="task2-1-setting-help.png"></a></div>
+</header>
+<main>
+    <div class="main-wrap">
+        <div class="main-top">
+            <div class="main-top-left">
+                <p>玩家配比</p>
+            </div>
+            <div class="main-top-right">
+                <ul id="list"></ul>
+                <button onclick="setBtn()"><span>点击设置</span><img src="task2-1-pencil.png">
+                </button>
+            </div>
+        </div>
+        <div class="main-center">
+            <p>水民词组</p>
+
+            <p>幽灵词组</p>
+        </div>
+        <div class="main-bottom">
+            <p>玩家人数
+                <input type="txt" id="num" maxlength="2" value="6" onblur="numChange()">人</p>
+
+            <div class="main-bottom-range">
+                <button class="minus" id="minus" onclick="del()"><img src="task2-1-minus.png"></button>
+                <input type="range" id="range"  oninput="rangeChange()" min="6" max="18" step="1" value="6">
+                <button class="plus" id="plus" onclick="add()"><img src="task2-1-plus.png"></button>
+            </div>
+        </div>
+        <button class="main-footer" onclick="next()">
+            去发牌
+        </button>
+    </div>
+</main>
+</body>
+<script src="task2-1.js"></script>
+</html>

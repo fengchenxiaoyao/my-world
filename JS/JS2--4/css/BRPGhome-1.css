@@ -1,0 +1,90 @@
+@charset "UTF-8";
+.wrap {
+  background: #f0f0f0;
+}
+/* 页头部分 */
+.header {
+  background: #29bde0;
+}
+.icon {
+  padding: 4.7% 0 4.7% 3.6%;
+}
+.nav {
+  position: relative;
+  margin: 4% 5.46%;
+  padding: 5.7% 0;
+  border: solid 1px #e7e7e7;
+  text-align: center;
+  font-size: 2.3rem;
+  font-weight: 400;
+  color: #9a9a9a;
+  background: #fff;
+}
+.nav span {
+  position: absolute;
+  top: 50%;
+  right: 2%;
+  transform: translateY(-50%);
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #e7e7e7;
+}
+/* 页面主体部分 */
+.main {
+  margin: 0 5.46%;
+  border: solid 1px #e7e7e7;
+  background: #fff;
+}
+.main .head {
+  padding: 5% 0;
+  border-bottom: solid 1px #fbb435;
+  font-size: 3rem;
+  text-align: center;
+  color: #fbb435;
+}
+.main .container {
+  position: relative;
+}
+.main .container .version {
+  margin: 4.37% 8.28%;
+  padding: 5% 0;
+  font-size: 2.3rem;
+  text-align: center;
+  color: #fff;
+  background: #69d1e9;
+  cursor: pointer;
+}
+.main .count {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #9a9a9a;
+}
+.main .btn {
+  text-align: center;
+}
+.main .btn .dot {
+  display: inline-block;
+  margin: 1%;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #f0f0f0;
+}
+.main .btn .color {
+  background: #69d1e9;
+}
+/* 页尾部分 */
+.footer {
+  padding: 5% 0;
+}
+.triangle {
+  position: absolute;
+  top: 50%;
+  right: 1.5%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 1.4rem solid transparent;
+  border-left: 1.4rem solid #fbb435;
+  border-bottom: 1.4rem solid transparent;
+}

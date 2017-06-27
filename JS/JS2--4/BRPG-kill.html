@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <title>杀手杀人</title>
+    <link rel="stylesheet" href="./css/BRPG-CssReset.css">
+    <link rel="stylesheet" href="./css/BRPG-Alert.css">
+    <link rel="stylesheet" href="./css/BRPG-kill.css">
+</head>
+<body>
+<div class="wrap">
+    <!-- 页头部分 -->
+    <header class="header">
+        <div class="head clearfix">
+            <div class="icon lef-icon">
+                <img src="./images/19.png">
+            </div>
+            <span>杀手杀人</span>
+            <div class="icon rig-icon"><img src="./images/20.png"></div>
+        </div>
+        <!-- 游戏提示 -->
+        <div class="tips clearfix">
+            <p>杀手睁眼，开始杀人</p>
+            <div class="play-btn">
+                <audio controls="controls">
+                    <source src="./images/song.mp3" type="audio/mp3">
+                </audio>
+            </div>
+            <div class="triangle"></div>
+        </div>
+    </header>
+    <!-- 页面主体部分 -->
+    <div class="onstitute">
+        <p>此元素是占位元素</p>
+    </div>
+    <div class="main clearfix" id="main">
+        <div class="title">点击要杀的玩家头像</div>
+    </div>
+    <div class="seat"></div>
+    <!-- 页尾部分 -->
+    <div class="footer">
+        <button type="button" class="btn" id="btn">确定</button>
+    </div>
+</div>
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script src="./js/BRPG-Alert.js"></script>
+<script src="./js/BRPG-kill.js"></script>
+</body>
+</html>

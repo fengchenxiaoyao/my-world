@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrap {
+    max-width: 640px;
+    min-width: 320px;
+    background-color: #29bde0;
+    margin: auto;
+
+}
+
+/*header��ʼ*/
+.header {
+    max-width: 640px;
+    min-width: 320px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #29bde0;
+}
+
+.header-wrap {
+    position: relative;
+    height: 4.5rem;
+    color: white;
+    border-bottom: 1px solid ghostwhite;
+}
+
+.header-center {
+    text-align: center;
+    line-height: 4.5rem;
+    font-size: 1.6rem;
+}
+
+.header-left {
+    position: absolute;
+    left: .5rem;
+    top: 50%;
+    margin-top: -.75rem;
+}
+
+.header-left img {
+    width: 1.5rem;
+}
+
+.header-right {
+    position: absolute;
+    right: .5rem;
+    top: 50%;
+    margin-top: -.75rem;
+}
+
+.header-right img {
+    width: 1.5rem;
+}
+
+/*body���ֿ�ʼ*/
+.body {
+    margin: 4.5rem 0 6rem;
+}
+
+.body-top-txt {
+    height: 3rem;
+    background-color: #b9e9f5;
+    position: relative;
+}
+
+.body-top-txt p {
+    font-size: 1rem;
+    color: #6a7b7f;
+    line-height: 3rem;
+    margin-left: 2rem;
+}
+
+.body-top-txt audio {
+    display: none;
+}
+
+.body-top-txt button {
+    position: absolute;
+    top: 50%;
+    margin-top: -1rem;
+    right: 1rem;
+    border: none;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    background-color: #fbb435;
+    cursor:pointer;
+}
+
+.body-top-txt img {
+    width: 1rem;
+    margin-left: .3rem;
+    margin-bottom: -0.2rem
+
+}
+
+.body-top-triangle div {
+    width: 0;
+    height: 0;
+    border-top: .5rem solid #b9e9f5;
+    border-left: .25rem solid transparent;
+    border-right: .25rem solid transparent;
+    margin-left: 3rem;
+}
+
+.body-top-triangle p {
+    margin-left: 2.8rem;
+    color: white;
+    font-size: .9rem
+}
+
+
+main {
+    background-color: #29bde0;
+    margin-top: 4.5rem;
+    margin-bottom: 6rem;
+
+}
+
+.main-box {
+    padding: 2.5rem 0;
+    display: inline-block;
+    width: 33.333%;
+    text-align: -webkit-center;
+}
+@media screen and (max-width: 500px) and (min-width: 400px) {.main-box{
+    width: 50%;}
+}
+@media screen and (max-width: 399px)  {.main-box{
+    width: 100%;}
+}
+.main-box-top {
+    background-image: url("ptteng.png");
+    background-repeat: no-repeat;
+    width: 9rem;
+    background-size: 9rem 100%;
+    border: 5px solid white;
+    box-sizing: border-box;
+}
+
+.main-box-top p {
+    text-align: center;
+    padding: 2.5rem 1rem;
+    background-color: #f5c97b;
+    opacity: 1;
+    color: white;
+    font-size: 2rem;
+}
+
+/*.main-box-top p:hover {*/
+    /*opacity: 1;*/
+/*}*/
+
+.main-box-bottom {
+    text-align: center;
+    border-top: 1px solid gainsboro;
+    color: white;
+    font-size: 1.3rem;
+}
+/*footer��ʼ*/
+.footer {
+    max-width: 640px;
+    min-width: 320px;
+    width: 100%;
+    height: 6rem;
+    line-height: 6rem;
+    border-top: 1px solid white;
+    position: fixed;
+    bottom: 0;
+    background-color: #29bde0;
+    text-align: center;
+
+}
+
+.footer-txt {
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    background-color: #fbb435;
+    width: 80%;
+    margin: 1rem auto;
+    font-size: 1.5rem;
+    color: white;
+    border: none;
+    cursor:pointer;/*�������*/
+}
+
+.footer-txt a {
+    text-decoration: none;
+    color: white;
+
+}

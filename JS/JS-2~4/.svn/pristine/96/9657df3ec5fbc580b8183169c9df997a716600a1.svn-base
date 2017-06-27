@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <title>游戏流程</title>
+    <link rel="stylesheet" href="./css/BRPG-CssReset.css">
+    <link rel="stylesheet" href="./css/BRPG-Alert.css">
+    <link rel="stylesheet" href="./css/BRPG-flow.css">
+</head>
+<body>
+<div class="wrap">
+    <!-- 页头部分 -->
+    <header class="header">
+        <div class="head clearfix">
+            <div class="lef-icon">
+                <img src="./images/play-leficon.png">
+            </div>
+            <span>法官日记</span>
+            <div class="rig-icon"><img src="./images/20.png"></div>
+        </div>
+    </header>
+    <div class="onstitute">
+        <p>占位元素</p>
+    </div>
+    <!-- 页面主体 -->
+    <div class="main clearfix">
+        <div class="day clearfix"><span id="day">第1天</span><span class="down">∨</span></div>
+        <div class="content">
+            <div class="rectangle" id="kill">
+                <div class="img"><img src="./images/night.png"></div>杀手杀人</div>
+            <div class="rectangle" id="death">
+                <div class="img"><img src="./images/day.png"></div>亡灵发表遗言</div>
+            <div class="rectangle" id="player">
+                玩家依次发言</div>
+            <div class="rectangle" id="vote">
+                投票</div>
+        </div>
+    </div>
+</div>
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script src="./js/BRPG-Alert.js"></script>
+<script src="./js/BRPG-flow.js"></script>
+</body>
+</html>

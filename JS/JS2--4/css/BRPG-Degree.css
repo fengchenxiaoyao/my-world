@@ -1,0 +1,145 @@
+@charset "UTF-8";
+.wrap {
+  background: #29bde0;
+}
+/* 页头部分 */
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  border-bottom: 0.5px solid #fff;
+  max-width: 768px;
+}
+.header .head {
+  position: relative;
+  font-size: 2rem;
+  color: #fff;
+  background: #29bde0;
+}
+.header .head .lef-icon {
+  float: left;
+  margin-left: 4%;
+  padding: 3%;
+  width: 4%;
+}
+.header .head .rig-icon {
+  position: absolute;
+  top: 50%;
+  right: 6%;
+  width:7%;
+  transform: translateY(-50%);
+}
+.header .head span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+/* 占位元素 */
+.onstitute {
+  text-align: center;
+  font-size: 3rem;
+}
+.onstitute p {
+  padding: 3% 0;
+  margin-bottom: 0;
+  color: #29bde0;
+}
+/* 页面主体 */
+.main {
+  position: relative;
+  width: 72%;
+  height: 0;
+  margin: 10% auto 15%;
+  padding-bottom: 100%;
+  border: 4px solid #fff;
+  background: #ffedc5;
+}
+.main .dot {
+  position: absolute;
+  display: inline-block;
+  width: 15%;
+  padding-bottom: 15%;
+  height: 0;
+  top: -7%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  border: 2px solid #ffedc5;
+  background: #fff;
+}
+.main .dot .number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 3rem;
+  font-weight: 700;
+  color: #f56b81;
+}
+.main .main-img {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 65%;
+}
+.main .main_img {
+  margin: 0 auto;
+}
+.main .show {
+  display: none;
+}
+.main .show-img {
+  width: 48%;
+  margin: 20% auto 10%;
+}
+@media screen and (max-width: 480px) {
+  .main .show-img {
+    margin: 10% auto 5%;
+  }
+}
+.main .show-img .show_img {
+  margin: 0 auto;
+}
+.main .p1 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 400;
+  color: #29bde0;
+}
+.main .p2 {
+  padding: 5%;
+  border-bottom: 1px solid #fff;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 400;
+  color: #f56b81;
+}
+@media screen and (max-width: 400px) {
+  .main .p2 {
+    padding: 0;
+  }
+}
+.main .p3 {
+  padding: 5%;
+  font-size: 2rem;
+  color: #fab344;
+}
+@media screen and (max-width: 400px) {
+  .main .p3 {
+    padding: 1.5%;
+  }
+}
+/* 页尾部分 */
+.btn {
+  width: 80%;
+  margin: 3% 10% 5%;
+  padding: 3% 0;
+  font-size: 2.5rem;
+  color: #fff;
+  background: #fab344;
+  outline: none;
+}

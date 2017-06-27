@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>玩家配比页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="./css/BRPG-CssReset.css">
+    <link rel="stylesheet" href="./css/BRPG-Alert.css">
+    <link rel="stylesheet" href="./css/BRPG-PlayerRatio.css">
+</head>
+<body>
+<!-- 用wrap包裹起来设置背景色 -->
+<div class="wrap">
+    <!-- 页头部分 -->
+    <header class="header">
+        <div class="head clearfix">
+            <div class="icon lef-icon">
+                <img src="./images/play-leficon.png">
+            </div>
+            <span>参数设置</span>
+            <div class="icon rig-icon"><img src="./images/play-rigicon.png"></div>
+        </div>
+    </header>
+    <div class="onstitute">
+        <p>占位元素</p>
+    </div>
+    <!-- 页面主体 -->
+    <div class="main clearfix">
+        <div class="sidebar">玩<br/>家<br/>配<br/>比</div>
+        <div class="content clearfix">
+            <div class="num">
+                <p class="block"></p>
+                <span class="degree">平民</span>
+            </div>
+            <div class="num">
+                <p class="block"></p>
+                <span class="degree">平民</span>
+            </div>
+            <div class="num">
+                <p class="block"></p>
+                <span class="degree">平民</span>
+            </div>
+            <div class="num">
+                <p class="block"></p>
+                <span class="degree">平民</span>
+            </div>
+            <div class="num">
+                <p class="block"></p>
+                <span class="degree">平民</span>
+            </div>
+            <div class="num">
+                <p class="block"></p>
+                <span class="degree">平民</span>
+            </div>
+            <div class="num">
+                <p class="block"></p>
+                <span class="degree">平民</span>
+            </div>
+            <div class="num">
+                <p class="block"></p>
+                <span class="degree">平民</span>
+            </div>
+            <div class="num">
+                <p class="block"></p>
+                <span class="degree">平民</span>
+            </div>
+            <div class="num">
+                <p class="block"></p>
+                <span class="degree">平民</span>
+            </div>
+            <div class="num">
+                <p class="block"></p>
+                <span class="degree">平民</span>
+            </div>
+            <div class="num">
+                <p class="block"></p>
+                <span class="degree">平民</span>
+            </div>
+            <div class="num">
+                <p class="block"></p>
+                <span class="degree">平民</span>
+            </div>
+            <div class="num">
+                <p class="block"></p>
+                <span class="degree">平民</span>
+            </div>
+            <div class="num">
+                <p class="block"></p>
+                <span class="degree">平民</span>
+            </div>
+            <div class="num">
+                <p class="block"></p>
+                <span class="degree">平民</span>
+            </div>
+            <div class="num">
+                <p class="block"></p>
+                <span class="degree">平民</span>
+            </div>
+            <div class="num">
+                <p class="block"></p>
+                <span class="degree">平民</span>
+            </div>
+        </div>
+        <div class="set" id="set">
+            <span>点击设置</span><img class="set-img" src="./images/pen.png">
+        </div>
+    </div>
+    <div class="phrase">
+        <p>水民词组</p>
+        <p class="name-phrase">幽灵词组</p>
+    </div>
+    <div class="player">
+        <label>玩家人数　<input id="peopleNumber" type="number"
+                           min="4" max="18" step="1" value="12">&nbsp&nbsp人</label>
+        <label class="slider">
+            <button class="slug-btn" id="reduce" type="button"><span>－</span></button>
+            <input class="range" id="range" type="range" min="4" max="18" step="1" value="12">
+            <button class="slug-btn" id="raise" type="button"><span>+</span></button>
+        </label>
+    </div>
+    <!-- 页尾部分 -->
+    <footer class="footer">
+        <button class="btn" type="button" id="deal">去发牌</button>
+    </footer>
+</div>
+<script src="./js/BRPG-Alert.js"></script>
+<script src="./js/BRPG-PlayerRatio.js"></script>
+</body>
+</html>

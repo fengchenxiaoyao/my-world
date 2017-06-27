@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="task4-2.css">
+    <title>投票</title>
+</head>
+<body>
+<div class="wrap">
+    <div class="header">
+        <div class="header-wrap">
+            <div class="header-left"><img src="task7-2_01.png"></div>
+            <div class="header-center">杀手页面</div>
+            <div class="header-right"><a href="task7.html"><img src="task7-2_02.png"></a></div>
+        </div>
+    </div>
+    <div class="body">
+        <div class="body-top">
+            <div class="body-top-txt">
+                <p>杀手请睁眼，杀手请选择要杀的对象</p>
+                <audio src="孙思怡%20-%20因为爱上你%20-%20DJ版.mp3" controls="controls" preload="" id="music" hidden=""></audio>
+                <button id="a" onclick="a()">
+                   <img src="task7-music.png">
+                </button>
+                <script>
+                    function a() {
+                        var audio = document.getElementById('music');
+                        if (audio.paused) {
+                            audio.play();
+                        } else {
+                            audio.pause();
+                        }
+                    }
+                </script>
+            </div>
+            <div class="body-top-triangle">
+                <div></div>
+                <p>点击下方玩家头像，对被杀的玩家进行标记</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer">
+        <!--翻页-->
+        <a href="#"><button class="footer-txt">确&nbsp&nbsp定
+        </button></a>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="task4-2.js"></script>
+</body>
+</html>

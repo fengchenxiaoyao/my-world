@@ -1,0 +1,155 @@
+@charset "UTF-8";
+.wrap {
+  background: #29bde0;
+}
+/* 页头部分 */
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  max-width: 768px;
+  border-bottom: 0.5px solid #a6a6a6;
+}
+.header .head {
+  position: relative;
+  font-size: 2.5rem;
+  color: #fff;
+  background: #29bde0;
+}
+.header .head .icon {
+  padding: 3.36% 0;
+}
+.header .head .lef-icon {
+  float: left;
+  margin-left: 4%;
+  width: 8.28%;
+}
+.header .head .rig-icon {
+  float: right;
+  margin-right: 4%;
+  width: 6.87%;
+}
+.header .head span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+/* 占位元素 */
+.onstitute {
+  text-align: center;
+  font-size: 3rem;
+}
+.onstitute p {
+  padding: 4.5% 0;
+  margin-bottom: 0;
+  color: #29bde0;
+}
+/* 页面主体部分 */
+.picture {
+  position: relative;
+  margin: 0 auto;
+}
+.picture img {
+  margin: 0 auto;
+}
+.picture .degree {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 3rem;
+  color: #fff;
+}
+.words {
+  margin-top: 2%;
+  padding: 0 11.56%;
+  font-size: 3rem;
+  font-weight: 400;
+  color: #ffc865;
+  text-align: justify;
+}
+.results {
+  margin-top: 5%;
+  padding: 0 11.56% 1.56%;
+  font-size: 2rem;
+  color: #fff;
+}
+.results .accent {
+  margin-right: 8%;
+}
+.results .accent-1 {
+  margin-right: 0;
+}
+.results .word-1 {
+  margin-bottom: 8px;
+}
+.results .word-2 {
+  margin-bottom: 4px;
+}
+/* 游戏过程显示部分 */
+.list {
+  padding: 2% 0 5.6% 11.56%;
+  border-bottom: 1px solid #a6a6a6;
+  font-size: 2rem;
+  color: #a6a6a6;
+  background: #fff;
+}
+.list p {
+  margin-bottom: 10px;
+}
+.list .data {
+  margin-right: 55%;
+  font-size: 2.5rem;
+  color: #000;
+}
+.list .time {
+  font-size: 1.6rem;
+  color: #c7c7c7;
+}
+.list .letter {
+  margin-bottom: 4px;
+}
+/* 占位元素 */
+.seat {
+  padding: 10.5% 0;
+  background: #fff;
+}
+/* 页尾部分 */
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  max-width: 768px;
+  z-index: 10;
+  padding: 3.13%;
+  box-sizing: border-box;
+  background: #99dff0;
+  background-color: rgba(153, 223, 240, 0.7);
+}
+.footer .btn {
+  position: relative;
+  float: left;
+  display: inline-block;
+  width: 43%;
+  margin: 0 3.5%;
+  padding: 6px 12px;
+  border-radius: 6px;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 3rem;
+  color: #fff;
+  white-space: nowrap;
+}
+@media screen and (max-width: 480px) {
+  .footer .btn {
+    font-size: 2rem;
+  }
+}
+.footer .btn-lef {
+  background: #f66f6f;
+}
+.footer .btn-rig {
+  background: #fbb435;
+}

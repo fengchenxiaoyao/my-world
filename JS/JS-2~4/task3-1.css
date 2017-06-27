@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/*溢出的时候可以将页面的min-width设置的小一点*/
+body {
+    min-width: 300px;
+    max-width: 640px;
+    margin: auto;
+}
+
+/*header开始*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #29bde0;
+    height: 4.5rem;
+    border-bottom: 1px solid gainsboro;
+}
+
+.header-left {
+    height: 2.5rem;
+    margin: .75rem;
+}
+
+.header-center {
+    line-height: 4.5rem;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.header-right {
+    height: 2rem;
+    margin: .75rem;
+}
+
+.header-right img {
+    height: 2rem;
+}
+
+/*main开始*/
+main {
+    background-color: #29bde0;
+}
+
+.main {
+    padding: 5rem 0;
+    position: relative;
+}
+
+.main-show {
+    width: 75%;
+    margin: auto;
+    border: 5px solid white;
+    box-sizing: border-box;
+    background-color: #ffedc5;
+}
+
+.main-hide {
+    width: 75%;
+    margin: auto;
+    border: 5px solid white;
+    box-sizing: border-box;
+    background-color: #ffedc5;
+    display: none;
+}
+
+.main-hide img {
+    margin: 3rem auto;
+    display: block;
+    width: 70%;
+}
+
+.player-role {
+
+    margin: 3% auto;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #29bde0;
+}
+
+.main-hide-text {
+
+    width: 100%;
+    margin: 0;
+    padding: 5% 0 5%;
+    text-align: center;
+    color: #fca000;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-top: 1px solid white;
+}
+
+.main-show img {
+    margin: 6rem auto;
+    display: block;
+    width: 70%;
+}
+
+#num {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: 4px solid #ffedc5;
+    display: inline-block;
+    background-color: white;
+    position: absolute;
+    top: 3.5rem;
+    left: 50%;
+    margin-left: -1.5rem;
+    text-align: center;
+    line-height: 3rem;
+    font-size: 1.6rem;
+    color: #f56b81;
+}
+
+main button {
+    width: 75%;
+    margin: 0 12.5% 3rem;
+    padding: .5rem 1rem;
+    background-color: #fbb435;
+    border: none;
+    font-size: 1.6rem;
+    color: white;
+    cursor: pointer;
+}

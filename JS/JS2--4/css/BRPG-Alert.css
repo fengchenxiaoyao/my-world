@@ -1,0 +1,29 @@
+@charset "UTF-8";
+#alertMsg {
+    display: none;
+    width: 200px;
+    border: 1px solid #e7e7e7;
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px #e7e7e7;
+    padding: 10px;
+    font-size: 16px;
+    position: absolute;
+    text-align: center;
+    background: #fff;
+    z-index: 100000;
+}
+
+#alertMsg_info {
+    padding: 2px 15px;
+    line-height: 1.5;
+    text-align: left;
+    color: #1d7ad9;
+}
+#alertMsg_btn1, #alertMsg_btn2 {
+    display: inline-block;
+    color: #29bde0;
+    font-size: 16px;
+    text-decoration: none;
+    margin: 10px;
+    cursor: pointer;
+}

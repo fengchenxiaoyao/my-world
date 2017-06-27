@@ -1,0 +1,110 @@
+@charset "UTF-8";
+.wrap {
+  height: auto;
+  background: #f0f0f0;
+}
+/* 页头部分 */
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  border-bottom: 0.5px solid #fff;
+  max-width: 768px;
+}
+.header .head {
+  position: relative;
+  font-size: 2rem;
+  color: #fff;
+  background: #29bde0;
+}
+.header .head .lef-icon {
+  float: left;
+  margin-left: 4%;
+  padding: 3%;
+  width: 4%;
+}
+.header .head .rig-icon {
+  position: absolute;
+  top: 50%;
+  right: 6%;
+  transform: translateY(-50%);
+}
+.header .head span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+/* 占位元素 */
+.onstitute {
+  text-align: center;
+  font-size: 3rem;
+}
+.onstitute p {
+  padding: 3% 0;
+  margin-bottom: 0;
+  color: #f0f0f0;
+}
+/* 页面主体 */
+.main {
+  width: 95%;
+  margin: 15px auto 25px;
+  border: 1px solid #c9c9c9;
+  background: #f7f7f7;
+}
+.main .day {
+  position: relative;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #c9c9c9;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #29bde0;
+}
+.main .day .down {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 6%;
+  font-size: 4rem;
+}
+.main .content {
+  width: 93%;
+  float: right;
+  padding: 2rem 0 3rem;
+  border-left: 2px solid #c9c9c9;
+  text-align: center;
+}
+.main .content .rectangle {
+  position: relative;
+  display: inline-block;
+  width: 80%;
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #fff;
+  font-size: 2rem;
+  background: #29bde0;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.main .content .rectangle:before {
+  position: absolute;
+  left: -35px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-width: 20px;
+  border-style: dashed solid dashed dashed;
+  border-color: transparent #29bde0 transparent transparent;
+  content: "";
+}
+.main .content .img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -18%;
+  width: 10%;
+  padding-bottom: 10%;
+  height: 0;
+}

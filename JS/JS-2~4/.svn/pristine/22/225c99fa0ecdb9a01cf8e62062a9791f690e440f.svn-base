@@ -1,0 +1,209 @@
+@charset "UTF-8";
+.wrap {
+  background: #eceded;
+}
+/* 页头部分 */
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  max-width: 768px;
+}
+.header .head {
+  position: relative;
+  font-size: 2rem;
+  color: #fff;
+  background: #29bde0;
+}
+.header .head .icon {
+  padding: 2% 0;
+}
+.header .head .lef-icon {
+  float: left;
+  margin-left: 4%;
+  width: 4%;
+}
+.header .head .rig-icon {
+  float: right;
+  margin-right: 4%;
+  width: 7.35%;
+}
+.header .head span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+/* 占位元素 */
+.onstitute {
+  text-align: center;
+  font-size: 3rem;
+}
+.onstitute p {
+  padding: 3% 0;
+  margin-bottom: 0;
+  color: #eceded;
+}
+/* 页面主体 */
+.main {
+  position: relative;
+  width: 94%;
+  margin: 0 3% 1%;
+  background: #fff;
+}
+.main .sidebar {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20%;
+  box-sizing: border-box;
+  border-right: 1px solid #efefef;
+  text-align: center;
+  font-size: 2rem;
+}
+.main .content {
+  float: right;
+  width: 80%;
+  padding-bottom: 3%;
+  border-bottom: 1px solid #efefef;
+  border-left: 1px solid #efefef;
+  background: #fbfbfb;
+}
+.main .content .num {
+  float: left;
+  width: 50%;
+  margin-top: 2%;
+  text-align: center;
+  font-size: 1.6rem;
+}
+.main .content .num .block {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin-right: 10px;
+  background: #fbfbfb;
+}
+.main .content .num .degree {
+  vertical-align: middle;
+  color: #fbfbfb;
+}
+.main .set {
+  float: right;
+  width: 80%;
+  padding: 2% 0;
+  border-left: 1px solid #efefef;
+  text-align: center;
+  font-size: 1.8rem;
+  color: #29bde0;
+  background: #fbfbfb;
+  cursor: pointer;
+}
+.main .set .set-img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+.phrase {
+  width: 94%;
+  margin: 0 3% 1%;
+  padding: 2%;
+  box-sizing: border-box;
+  font-size: 1.8rem;
+  color: #d7d7d7;
+  background: #fff;
+}
+.phrase p {
+  border-bottom: 1px solid #efefef;
+}
+.phrase .name-phrase {
+  margin-top: 3%;
+}
+.player {
+  width: 94%;
+  margin: 0 3%;
+  padding: 2%;
+  box-sizing: border-box;
+  font-size: 1.8rem;
+  background: #fff;
+}
+.player input[type=number] {
+  vertical-align: middle;
+  width: 50px;
+  height: 25px;
+  text-align: center;
+  font-size: 2rem;
+  color: #fab344;
+  background: #f4f5f5;
+}
+.player .slider {
+  display: block;
+  margin: 4% 0 3%;
+  text-align: center;
+}
+.player .slider .slug-btn {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+  border: 1px solid #efefef;
+  font-size: 20px;
+  color: #fab344;
+  outline: none;
+}
+.player .slider .slug-btn span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.player .slider .range {
+  width: 76%;
+  margin: 0 10px;
+}
+@media screen and (max-width: 400px) {
+  .player .slider .range {
+    width: 75%;
+  }
+}
+.player .slider input[type=range] {
+  -webkit-appearance: none;
+}
+.player .slider input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+.player .slider input[type=range]::-webkit-slider-runnable-track {
+  height: 4px;
+  background: #fab344;
+}
+@media screen and (max-width: 480px) {
+  .player .slider input[type=range]::-webkit-slider-runnable-track {
+    height: 2px;
+  }
+}
+.player .slider input[type=range]:focus {
+  outline: none;
+}
+.player .slider input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 11%;
+  padding-bottom: 5.83%;
+  margin-top: -2.5%;
+  /*使滑块超出轨道部分的偏移量相等*/
+  background: url(../images/thumb.png) no-repeat;
+  background-size: 100% 100%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* 页尾部分 */
+.btn {
+  width: 94%;
+  margin: 3% 3%;
+  padding: 3% 0;
+  font-size: 2.5rem;
+  color: #fff;
+  background: #fab344;
+  outline: none;
+}

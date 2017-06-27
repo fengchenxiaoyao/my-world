@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BRPGhomepage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="./css/BRPG-CssReset.css">
+    <link rel="stylesheet" href="./css/BRPGhome-1.css">
+</head>
+<body>
+<!-- 整个页面用wrap包裹起来设置背景色 -->
+<div class="wrap">
+<!-- 页头部分 -->
+<header class="header">
+    <div class="icon">
+        <img src="./images/18.png">
+    </div>
+</header>
+<!-- 上次游戏版本导航 -->
+<div class="nav">
+    <a href="#"><p>上次游戏：捉鬼猜词版</p><span class="sign">></span></a>
+</div>
+<!-- 页面主体部分 -->
+<div class="main">
+    <div class="head">捉鬼游戏</div>
+    <div class="container">
+        <div class="version" onclick="jump()">简化版</div>
+        <div class="count">有1133个用户正在玩此款游戏</div>
+        <a href="#">
+            <div class="version">猜词版</div></a>
+        <div class="count">有1133个用户正在玩此款游戏</div>
+        <a href="#">
+            <div class="version">白痴版</div></a>
+        <div class="triangle"></div>
+    </div>
+    <div class="count">有1133个用户正在玩此款游戏</div>
+    <div class="btn">
+        <div class="dot color"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
+</div>
+<footer class="footer"></footer>
+    <script src="./js/BRPG-home.js"></script>
+</div>
+</body>
+</html>

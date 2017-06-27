@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <title>黑夜解密</title>
+    <link rel="stylesheet" href="./css/BRPG-CssReset.css">
+    <link rel="stylesheet" href="./css/BRPG-decrypt.css">
+</head>
+<body>
+<div class="wrap">
+    <!-- 页头部分 -->
+    <header class="header">
+        <div class="head clearfix">
+            <div class="icon lef-icon">
+                <img src="./images/19.png">
+            </div>
+            <span>黑夜解密</span>
+            <div class="icon rig-icon"><img src="./images/20.png"></div>
+        </div>
+    </header>
+    <!-- 页面主体部分 -->
+    <div class="onstitute">
+        <p>此元素是占位元素</p>
+    </div>
+    <div class="main">
+        <img src="./images/night-1.png">
+         <div class="content" id="content"></div>
+    </div>
+    <div class="seat"></div>
+    <!-- 页尾部分 -->
+    <div class="footer">
+        <button type="button" class="btn" id="btn">第2天</button>
+    </div>
+</div>
+<script src="./js/BRPG-decrypt.js"></script>
+</body>
+</html>

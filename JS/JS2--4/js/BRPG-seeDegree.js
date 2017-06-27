@@ -1,0 +1,41 @@
+
+var btn = document.getElementById("btn");
+var i = 1;
+var z = 1; //使用这个数据为后面进行余数是否为1的判断
+
+// 提取上一个页面保存的数据
+var impress = JSON.parse(localStorage.getItem("arr"));
+console.log(impress);
+
+// 点击事件
+
+    $(".btn").click(function() {
+        if (i <= 2*impress.length-2) {
+            if (i % 2 === 1) {
+                $("#number").text(z);
+                $(".main-img").hide();
+                $(".show").show();
+                $("#role").text(impress[z - 1]);
+                $(".btn").text("隐藏并传递给" + (z + 1) + "号");
+            }
+            else if (i % 2 === 0) {
+                $("#number").text(z + 1);
+                $(".main-img").show();
+                $(".show").hide();
+                $(".btn").text("查看" + (z + 1) + "身份");
+                z++;
+            }
+        }
+        else if(i === 2 * impress.length - 1){
+            $("#number").text(z);
+            $(".main-img").hide();
+            $(".show").show();
+            $("#role").text(impress[z - 1]);
+            $(".btn").text("法官查看");
+        }
+        else if(i === 2 * impress.length){
+            window.location.href = "BRPG-JudgeView.html";
+        }
+        i++;
+    });
+

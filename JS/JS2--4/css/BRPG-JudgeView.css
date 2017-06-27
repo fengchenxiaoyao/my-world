@@ -1,0 +1,124 @@
+@charset "UTF-8";
+.wrap {
+  height: auto;
+  background: #29bde0;
+}
+/* 页头部分 */
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  border-bottom: 0.5px solid #fff;
+  max-width: 768px;
+}
+.header .head {
+  position: relative;
+  font-size: 2rem;
+  color: #fff;
+  background: #29bde0;
+}
+.header .head .lef-icon {
+  float: left;
+  margin-left: 4%;
+  padding: 3%;
+  width: 4%;
+}
+.header .head .rig-icon {
+  position: absolute;
+  top: 50%;
+  right: 6%;
+  transform: translateY(-50%);
+}
+.header .head span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+/* 占位元素 */
+.onstitute {
+  text-align: center;
+  font-size: 3rem;
+}
+.onstitute p {
+  padding: 3% 0;
+  margin-bottom: 0;
+  color: #29bde0;
+}
+/* 页面主体部分 */
+.main {
+  margin-top: 5%;
+  padding-bottom: 5%;
+}
+.main .degree {
+  float: left;
+  width: 20%;
+  margin: 0 6.66% 8%;
+  box-sizing: border-box;
+  border: 3px solid #fff;
+}
+.main .degree .name {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 70%;
+  background: url(../images/beijing_05.png) no-repeat;
+  background-size: 100% 100%;
+  font-size: 2rem;
+}
+.main .degree .name:hover {
+  background: #fab344;
+}
+.main .degree .name:hover .vocation {
+  display: inline;
+}
+.main .degree .ordinal {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 30%;
+  background: #3ba3c4;
+  opacity: 0.7;
+  font-size: 1.6rem;
+  color: #fff;
+}
+.main .degree span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  white-space: nowrap;
+}
+.main .degree .vocation {
+  display: none;
+  color: #fff;
+}
+/* 占位元素 */
+.seat {
+  padding: 10% 0;
+}
+@media screen and (max-width: 550px) {
+  .seat {
+    padding: 46% 0;
+  }
+}
+/* 页尾部分 */
+.footer {
+  position: fixed;
+  bottom: 0;
+  z-index: 10;
+  width: 100%;
+  max-width: 768px;
+  text-align: center;
+  background: #29bde0;
+}
+.footer .btn {
+  width: 70%;
+  margin: 6.5% 0;
+  padding: 6px 0;
+  font-size: 3rem;
+  color: #fff;
+  background: #fab344;
+  white-space: nowrap;
+}
