@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="task6.css">
+
+
+    <title>后台登录页</title>
+</head>
+<body ng-app="app">
+<main ng-controller="login">
+    <div class="title">萝卜多后台登录</div>
+    <form name="loginForm">
+    <div class="user">
+        <img src="task5-name.png">
+        <input type="text" ng-model="user" name="user" id="user" placeholder="用户名" ng-maxlength="16"
+        ng-minlength="4" pattern="^[a-zA-Z\d]+$" required>
+    </div>
+        <div class="tips-name" ng-messages="loginForm.user.$error" ng-if="loginForm.user.$touched">
+            <p ng-message="required">*必填项</p>
+            <p ng-message="maxlength">*最多16位</p>
+            <p ng-message="minlength">*最少4位</p>
+            <p ng-message="pattern">*字母或者数字</p>
+        </div>
+        <!--<p class="tips-name">{{tipsName}}</p>-->
+    <div class="password">
+        <img src="task5-password.png">
+        <input type="password" ng-model="password" name="password" id="password" placeholder="密码"
+               ng-maxlength="16" ng-minlength="4" required>
+    </div>
+        <div class="tips-pwd" ng-messages="loginForm.password.$error" ng-if="loginForm.password.$touched">
+            <p ng-message="required">*必填项</p>
+            <p ng-message="maxlength">*最多16位</p>
+            <p ng-message="minlength">*最少4位</p>
+        </div>
+        <!--<p class="tips-pwd"></p>-->
+        <p class="tipsPwd">{{tipsPwd}}</p>
+    </form>
+    <button id="login" ng-click="login()" onkeydown=keyLogin()>登录</button>
+</main>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script src="http://cdn.bootcss.com/angular.js/1.6.4/angular.js"></script>
+<script src="http://cdn.bootcss.com/angular.js/1.6.4/angular-messages.js"></script>
+<script src="login.js"></script>
+</body>
+</html>

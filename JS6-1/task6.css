@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding:0;
+}
+body{
+    background: url("背景图.png");
+    background-size:100% 100%;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+main{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 3%;
+    padding: 0 1.5rem;
+
+}
+.title{
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem;
+    color: white;
+}
+.user,.password{
+    margin-bottom: 1.6rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+main img{
+    border-right: 1px solid darkgrey;
+    padding: 0 15px;
+    height:100%;
+}
+main input{
+    border: none;
+    padding: 1rem 20px;
+    font-size: 1rem;
+}
+main .tips-name{
+    color: red;
+    font-size: .9rem;
+    padding-bottom: .5rem;
+    padding-left: 1rem;
+    position: absolute;
+    top: 8rem;
+}
+.tips-pwd,.tipsPwd{
+    color: red;
+    font-size: .9rem;
+    padding-bottom: .5rem;
+    padding-left: 1rem;
+    position: absolute;
+    top: 12.7rem;
+}
+main button{
+    margin-bottom: 1rem;
+    width: 100%;
+    border: none;
+    background-color: #03a9f4;
+    color: white;
+    font-size: 1.6rem;
+    padding: .5rem 0;
+    cursor: pointer;
+}

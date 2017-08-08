@@ -1,0 +1,18 @@
+.article-main .select{
+    background-color: white;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+.list{
+    background-color: white;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    padding: 1rem;
+}
+.list .list-header{
+    display: flex;
+    justify-content: space-between;
+
+}
