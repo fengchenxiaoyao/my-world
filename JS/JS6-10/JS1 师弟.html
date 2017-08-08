@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            background: #efefef;
+        }
+        ul {
+            list-style-type: none;
+        }
+        .clear:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        #box {
+            width: 370px;
+            height: 500px;
+            margin: auto;
+            text-align: center;
+        }
+        #box ul {
+            display: inline-block;
+            margin-left: -19px;
+        }
+        #box li {
+            width: 100px;
+            height: 100px;
+            float: left;
+            margin: 5px;
+            border-radius: 5px;
+            background-color: #EE82EE;
+        }
+        #box button {
+            display: block;
+            width: 320px;
+            line-height: 30px;
+            margin: 10px auto;
+            border-radius: 5px;
+            background-color: #fff;
+            outline: 0;
+            border: 1px solid #EE82EE;
+            cursor: pointer;
+        }
+        #box button:hover {
+            background-color: #EE82EE;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+<div id = "box">
+    <ul class="clear">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <button id="start">开始闪烁</button>
+    <button id="stop">停止闪烁</button>
+</div>
+</body>
+<script>
+    window.onload = function() {
+        var boxObj = document.getElementById('box');
+        var startObj = document.getElementById('start');
+        var stopObj = document.getElementById('stop');
+        var liDom = document.getElementsByTagName('li');
+        var arrColor = ['r','g','b'];
+        function sudoku() {
+            // 每次点击之前，重置方块的颜色
+            for(var i = 0;i < liDom.length; i++) {
+                liDom[i].style.backgroundColor = '#EE82EE';
+            }
+            //  九宫格随机颜色
+            var array = [];
+            var r = Math.floor(Math.random()*9);
+            // 获取不重复的随机数，如果i<3 则会出现undefined的情况
+            for(var i = 0; i < 7; i++){
+                var flag = 0;
+                do {
+                    for(var j = 0; j < array.length; j++){
+                        if(array[j] == r){
+                            flag = 1;
+                            break;
+                        };
+                    };
+                    if(!flag) {
+                        array[array.length] = r;
+                    } else {
+                        r = Math.floor(Math.random()*9);
+                    };
+                }while(!flag);
+            };
+            // 截取array数组中前三个元素做为九宫格随机数
+            var arr = array.slice(0,3);
+            for(var i = 0;i < arr.length;i++) {
+                for(var j = 0; j < arrColor.length; j++) {
+                    arrColor[j] = Math.floor(Math.random()*255).toString(10);
+                }
+                var rgb = 'rgb(' + arrColor[0] + ',' + arrColor[1] + ',' + arrColor[2] + ')';
+                liDom[arr[i]].style.backgroundColor = rgb;
+            };
+        }
+        var running;
+        // 设置一个定时器，当点击开始按钮时，触发定时器
+        startObj.onclick = function() {
+            clearInterval(running);
+            running = setInterval(sudoku,1000);
+        };
+        //停止闪烁 按钮
+        stopObj.onclick = function() {
+            clearInterval(running);
+            // 点击停止按钮的时候，重置色块的颜色
+            for(var i = 0;i < liDom.length; i++) {
+                liDom[i].style.backgroundColor = '#EE82EE';
+            };
+        };
+    }
+</script>
+</html>

@@ -1,0 +1,53 @@
+.details-wrap{
+    margin: 2rem;
+    border: 1px solid gainsboro;
+    background-color: white;
+    border-radius: 5px;
+}
+.details-wrap .header{
+    border-bottom: 1px solid gainsboro;
+    background-color: ghostwhite;
+    padding: 1rem;
+}
+.details-wrap .content{
+    padding: 3% 10%;
+
+}
+
+/*上传图片自带的样式太丑，所以在上面重新覆盖一个按钮*/
+#intro-img{
+    display: none;
+}
+.selectFile{
+    display: block;
+    width:7rem;
+}
+
+/*输入框的标题的样式*/
+.details-wrap .title-name,.type,.mean,.link,.img{
+    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+/*必填项标注*/
+.stars{
+    color: red;
+}
+/*type项样式*/
+.type .type-left,.type-right{
+    display: inline-block;
+}
+.type-left{
+    width:30%;
+}
+.type-right{
+    width:30%;
+}
+/*空的占位符*/
+.null{
+    opacity: 0;
+}
+/*按钮组*/
+.details-button{
+    margin-top: 1rem;
+}

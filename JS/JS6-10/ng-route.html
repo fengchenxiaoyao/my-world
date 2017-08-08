@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.bootcss.com/angular.js/1.4.12/angular.js"></script>
+    <script src="https://cdn.bootcss.com/angular.js/1.4.12/angular-route.js"></script>
+        <!--<script src="angular.js"></script>-->
+    <!--<script src="angular-route.js"></script>  //注意引包顺序 必须在angular.js后面-->
+</head>
+<body ng-app="s1.app">
+<div>
+    <a href="#/list">list</a>
+    <a href="#/detail/0">张三</a>
+    <a href="#/detail/1">李四</a>
+    <a href="#/detail/2">王五</a>
+    <a href="#/detail/3">赵六</a>
+</div>
+<div ng-view></div>
+<script>
+    var app = angular.module('s1.app', ['ngRoute']);
+    app.service('DataService', function () {　　//创建DataService服务
+        this.getList = function () {
+            return [
+                {name: '张三', tel: '13333333333'},
+                {name: '李四', tel: '13433333333'},
+                {name: '王五', tel: '13533333333'},
+                {name: '赵六', tel: '18666666666'},
+            ]
+        }
+    });
+    app.controller('ListController', function ($scope) {　　//创建ListController控制器 用来指定路由中的控制器
+        $scope.msg = 'list controller'
+    });
+    app.controller('DetailController', function ($scope, $routeParams, DataService) {　　//穿件Detail控制器 用法和上个一样
+        var index = $routeParams.index;
+        $scope.data = DataService.getList()[index];
+    });
+    app.config(function ($routeProvider) {
+        $routeProvider
+            .when('/list', {
+                template: '<div>{{msg}}</div>',
+                controller: 'ListController'
+            })
+            .when('/detail/:index', {
+                    template: '<div>{{data}}</div>',　　//这里可以用templateUrl用来指定模板,模板中不可以有路由模块嵌套
+                    controller: 'DetailController'
+                }
+            )
+    })
+</script>
+</body>
+
+</html>

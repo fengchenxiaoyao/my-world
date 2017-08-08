@@ -1,0 +1,89 @@
+p {
+    margin: 0;
+    padding: 0;
+}
+.table{margin-bottom: 0!important;}
+.article-main .select {
+    background-color: white;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    padding: 2rem 4rem;
+    margin-bottom: 1rem;
+}
+
+.list {
+    background-color: white;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+}
+.list td span{
+    display: inline-block;
+    color: #337ab7;
+    cursor: pointer;
+}
+.list td span:hover{
+    color: red;
+}
+.list .list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0.5rem;
+    border-bottom: 1px solid #cccccc;
+    font-size: 14px;
+    font-weight: bold;
+    background: #f5f5f5;
+
+}
+
+.list td, th {
+    text-align: center !important;
+    vertical-align: middle !important;
+}
+
+.page-list input {
+    /*width: 2rem!important;*/
+    text-align: center;
+}
+
+.page-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.6rem;
+}
+
+/*时间插件样式*/
+.full button span {
+    background-color: limegreen;
+    border-radius: 32px;
+    color: black;
+}
+
+.partially button span {
+    background-color: orange;
+    border-radius: 32px;
+    color: black;
+}
+
+/*时间插件样式end*/
+/*搜索框*/
+.select-time {
+    /*display: inline-block;vertical-align: middle;*/
+    /*display: flex;align-items: center;*/
+}
+.select-time .input-time,.type{
+    font-size: 1.6rem;
+
+}
+.type select{
+    /*height: 2.2rem;*/
+    border-radius: 5px;
+}
+.select .status-text,.status{font-size: 1.6rem;}
+.select .status{
+    height: 2.2rem;
+    border-radius: 5px;
+    /*width: 10rem;*/
+
+}

@@ -1,0 +1,146 @@
+
+<div class="article-main" ng-controller="article-table">
+    <div class="select">
+        <div class="row select-time" style="margin-bottom: 2rem">
+            <div class="col-lg-4 col-md-6 start-time">
+                <span class=" input-time">修改时间</span>
+
+                <p class="input-group">
+                    <input type="text" class="form-control"
+                           uib-datepicker-popup
+                           ng-model="startTime"
+                           ng-change="timeTransform()"
+                           is-open="popup1.opened"
+                           datepicker-options="dateOptions"
+                           ng-required="true"
+                           close-text="Close"
+                           alt-input-formats="altInputFormats"/>
+                    <span class="input-group-btn">
+                            <button type="button" class="btn btn-default"
+                                    ng-click="open1()">
+                                <i class="glyphicon glyphicon-calendar">
+                                </i></button>
+                    </span>
+                </p>
+            </div>
+            <!--<span class="col-lg-1 col-md-1" style="text-align: center;font-size: 1.6rem;">——</span>-->
+            <div class="col-lg-4 col-md-6 end-time">
+
+                <span class=" input-time" style="opacity: 0;">发布时间</span>
+                <p class="input-group">
+                    <input type="text" class="form-control"
+                           uib-datepicker-popup
+                           ng-model="endTime"
+                           ng-change="timeTransform()"
+                           is-open="popup2.opened"
+                           datepicker-options="dateOptionsEnd"
+                           ng-required="true"
+                           close-text="Close"/>
+                    <span class="input-group-btn">
+                            <button type="button" class="btn btn-default"
+                                    ng-click="open2()">
+                                <i class="glyphicon glyphicon-calendar">
+                                </i></button>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="row" style="margin-bottom: 2rem">
+            <p class="col-lg-4 col-md-6">
+                <span class=" status-text">类&emsp;&emsp;型</span>
+                <select name="" class="form-control" ng-model="types">
+                    <option value="" selected="selected">全部</option>
+                    <option value="0">首页Banner</option>
+                    <option value="1">找职位Banner</option>
+                    <option value="2">找精英Banner</option>
+                    <option value="3">行业大图</option>
+                </select>
+            </p>
+            <!--<span class="col-lg-1 col-md-1" style="text-align: center;font-size: 1.6rem;"></span>-->
+            <p class="col-lg-4 col-md-6">
+                <span class=" status-text">状&emsp;&emsp;态</span>
+                <select class="form-control" ng-model="statuss">
+                    <option value="" selected="selected">全部</option>
+                    <option value="2">上线</option>
+                    <option value="1">草稿</option>
+                </select>
+            </p>
+        </div>
+        <div class="button" style="float: right;">
+            <button type="button" class="btn btn-danger" ng-click="clear()">清空</button>
+            <button type="button" class="btn btn-success" ng-click="search()">搜索</button>
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+    <div class="list">
+        <p class="list-header">
+            <span>Article列表</span>
+            <button type="button" class="btn btn-success btn-xs" ng-click="details()">+新增</button>
+        </p>
+        <div class=" table-responsive">
+            <table class="table table-striped add-table-border">
+                <thead>
+                <tr class="table-title">
+                    <th>ID</th>
+                    <th>名称</th>
+                    <th>类型</th>
+                    <th>发布时间</th>
+                    <th>修改时间</th>
+                    <th>发布者</th>
+                    <th>状态</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody class=".table-hover">
+                <tr data-ng-repeat="record in records">
+                    <td>{{$index+1}}</td>
+                    <td>{{record.title}}</td>
+                    <td>{{record.type|typeChange}}</td>
+                    <td>{{record.createAt|date:"yyyy-MM-dd HH:mm:ss"}}</td>
+                    <td>{{record.updateAt|date:"yyyy-MM-dd HH:mm:ss"}}</td>
+                    <td>{{record.author}}</td>
+                    <td>{{record.status|statusChange}}</td>
+                    <td>
+                        <button type="button" ng-click="offline()" class="btn btn-success btn-xs">{{record.status|lineChange}}</button>
+                        <button type="button" ng-click="editor()" class="btn btn-info btn-xs">编辑</button>
+                        <button type="button" ng-click="delete()" class="btn btn-danger btn-xs">删除</button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="no-items ng-hide" ng-show="showFlag" style="text-align: center">暂无数据!</div>
+    <div class="page-list ng-isolate-scope">
+        <div class="page-total page-list-one">
+            每页显示<input type="text"
+                       ng-model="itemsPerPage"
+                       class="ng-pristine ng-valid ng-not-empty ng-touched"
+                       style="width: 2rem;">条
+        </div>
+        <!--<div class="page-list-one">-->
+        <!--每页显示-->
+        <!--<input type="number" ng-model="itemsPerPage" style="width: 3rem;">条-->
+        <!--</div>-->
+        <ul uib-pagination
+            boundary-links="true"
+            total-items="totalItems"
+            items-per-page="itemsPerPage"
+            ng-model="currentPage"
+            max-size="maxSize"
+            previous-text="&lsaquo;"
+            next-text="&rsaquo;"
+            first-text="&laquo;"
+            last-text="&raquo;"
+            ng-change="list()">
+        </ul>
+        <div class="page-total">
+            共{{pageNum}}页&emsp;去第
+            <input type="text" ng-model="pageNo"
+                   class="ng-pristine ng-untouched ng-valid ng-empty"
+                   style="width: 2rem;">页
+            <button type="button" class="btn btn-info" ng-click="setPage()">确定</button>
+
+        </div>
+    </div>
+</div>

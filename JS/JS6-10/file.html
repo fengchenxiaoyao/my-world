@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="http://cdn.bootcss.com/angular.js/1.6.4/angular.js"></script>
+    <script src="angular-file-upload.js"></script>
+</head>
+<body>
+<div ng-app="app">
+    <div ng-controller="AppController">
+        <input type="file" nv-file-select uploader="uploader"/><br/>
+        <ul>
+            <li ng-repeat="item in uploader.queue">
+                Name: <span ng-bind="item.file.name"></span><br/>
+                <button ng-click="item.upload()">upload</button>
+            </li>
+        </ul>
+    </div>
+</div>
+<script>
+    angular
+        .module('app', ['angularFileUpload'])
+        .controller('AppController', function($scope, FileUploader) {
+            $scope.uploader = new FileUploader();
+        });
+</script>
+
+</body>
+</html>

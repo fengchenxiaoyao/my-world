@@ -1,0 +1,115 @@
+<div ng-controller="indexController">
+    <div class="header">
+        <div class="header-left">
+            萝卜多后台管理系统
+        </div>
+        <div class="header-right">
+            <span>超级管理员</span>
+            <span class="border">admin</span>
+            <span ng-click="logout()">退出</span>
+        </div>
+    </div>
+    <div class="main">
+        <div class="main-nav">
+            <div class="main-warp">
+                <div class="leftsidebar_box">
+
+                    <dl class="system_log">
+                        <dt><span class="pen iconfont">&#xe604;</span>信息管理</dt>
+                        <dd class="first_dd"><a >公司列表</a></dd>
+                        <dd><a >职业列表</a></dd>
+
+                    </dl>
+                    <dl class="custom">
+                        <dt><span class="pen iconfont">&#xe604;</span>Article管理</dt>
+                        <dd class="first_dd" ui-sref="index.article-table"><a href="#">Article列表</a></dd>
+
+                    </dl>
+                    <dl class="channel">
+                        <dt><span class="pen iconfont">&#xe604;</span>后台管理</dt>
+                        <dd class="first_dd"><a>渠道主页</a></dd>
+                        <dd><a >模块管理</a></dd>
+                        <dd><a >角色管理</a></dd>
+                        <dd><a >密码修改</a></dd>
+                        <dd><a >账户管理</a></dd>
+                    </dl>
+
+                </div>
+            </div>
+
+
+            <!--<ul>-->
+                <!--&lt;!&ndash;<li class="block">&ndash;&gt;-->
+                    <!--&lt;!&ndash;<input type="checkbox" name="item" id="item1" />&ndash;&gt;-->
+                    <!--&lt;!&ndash;<label for="item1"><i aria-hidden="true" ></i> 信息管理 <span>2</span></label>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<ul class="options">&ndash;&gt;-->
+                        <!--&lt;!&ndash;<li><a><i aria-hidden="true" ></i> 公司列表</a></li>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<li><a><i aria-hidden="true" ></i> 职业列表</a></li>&ndash;&gt;-->
+                    <!--&lt;!&ndash;</ul>&ndash;&gt;-->
+                <!--&lt;!&ndash;</li>&ndash;&gt;-->
+                <!--&lt;!&ndash;<li class="block">&ndash;&gt;-->
+                    <!--&lt;!&ndash;<input type="checkbox" name="item" id="item2" />&ndash;&gt;-->
+                    <!--&lt;!&ndash;<label for="item2"><i aria-hidden="true" ></i>article管理<span>1</span></label>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<ul class="options">&ndash;&gt;-->
+                        <!--&lt;!&ndash;<li ui-sref="index.article-table"><a href="#"><i aria-hidden="true" ></i> Article列表</a></li>&ndash;&gt;-->
+                    <!--&lt;!&ndash;</ul>&ndash;&gt;-->
+                <!--&lt;!&ndash;</li>&ndash;&gt;-->
+                <!--&lt;!&ndash;<li class="block">&ndash;&gt;-->
+                    <!--&lt;!&ndash;<input type="checkbox" name="item" id="item3" />&ndash;&gt;-->
+                    <!--&lt;!&ndash;<label for="item3"><i aria-hidden="true" ></i>后台管理<span>4</span></label>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<ul class="options">&ndash;&gt;-->
+                        <!--&lt;!&ndash;<li><a ><i aria-hidden="true" ></i> 模块管理</a></li>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<li><a><i aria-hidden="true" ></i> 角色管理</a></li>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<li><a><i aria-hidden="true" ></i>密码修改</a></li>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<li><a><i aria-hidden="true" ></i> 账户管理</a></li>&ndash;&gt;-->
+                    <!--&lt;!&ndash;</ul>&ndash;&gt;-->
+                <!--&lt;!&ndash;</li>&ndash;&gt;-->
+
+            <!--</ul>-->
+
+
+        </div>
+        <div class="view">
+            <div class="" data-ui-view=""><span class="welcome">welcome</span>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $("dt").css({"background-color": "#44c6eb!important;"});
+        $(".leftsidebar_box dt img").attr("src", "images/select_xl01.png");
+        $(".leftsidebar_box dd").hide();
+        var clickedBlock = sessionStorage.getItem("remember");
+        var click=sessionStorage.getItem("rem");
+        if (clickedBlock === undefined) {
+            console.log(111111)
+        }
+        else {
+            console.log(clickedBlock);
+            //$("."+clickedBlock).css({"color":"red"})
+            $("." + clickedBlock).children().css({"background-color": "#44c6eb;"});
+            $("." + clickedBlock).find('dd').removeClass("menu_chioce");
+            $("." + clickedBlock).find('img').attr("src", "images/select_xl.png");
+            $("." + clickedBlock).find('dd').slideToggle();
+            $("." + clickedBlock).find('dd').addClass("menu_chioce");
+        }
+        $(".leftsidebar_box dt").click(function () {
+            $("dt").css("background-color","");
+            $(this).css("background-color", "rgba(255,255,255,0.5)");
+            $(this).parent().find('dd').removeClass("menu_chioce");
+            $(".leftsidebar_box dt img").attr("src", "images/select_xl01.png");
+            $(this).parent().find('img').attr("src", "images/select_xl.png");
+            $(".menu_chioce").slideUp();
+            $(this).parent().find('dd').slideToggle();
+            $(this).parent().find('dd').addClass("menu_chioce");
+            var clickedBlock = ($(this).parent()).attr('class');
+            var click=$(this).attr("class");
+            sessionStorage.setItem("remember", clickedBlock);
+            sessionStorage.setItem("rem",click)
+        });
+
+    })
+</script>
